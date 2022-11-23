@@ -1,13 +1,11 @@
 
-
-
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Rubik,sans-serif;
+  font-family: Rubik, sans-serif;
 }
+
 body {
   width: 100%;
   font-size: 16px;
@@ -25,16 +23,13 @@ body {
 }
 
 
-
-
-
 .header {
 
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    width: 1500px;
-    height: 115px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 1500px;
+  height: 115px;
 
 
   &__nav {
@@ -49,6 +44,7 @@ body {
       font-weight: 400;
       font-size: 16px;
       color: #515151;
+
       &_desiccants {
         display: inline-block;
         width: 100px;
@@ -66,10 +62,6 @@ body {
 }
 
 
-
-
-
-
 // html {
 //   max-width: 1920px;
 //   font-size: 16px;
@@ -82,12 +74,10 @@ body {
 // }
 
 
-
 //
 //@media screen and (max-device-width: 375px) {
 //
 //}
-
 
 
 .content-wrapper {
@@ -119,10 +109,6 @@ body {
     color: #515151;
   }
 
-  .info-delivery,
-  .info-phone {
-    padding-top: 0.875rem;
-  }
 
   .info-delivery {
     display: flex;
@@ -206,14 +192,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
 .hr {
   border: none; /* Убираем границу для браузера Firefox */
   color: #e8e8e8; /* Цвет линии для остальных браузеров */
@@ -248,7 +226,7 @@ body {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
   }
 
-  &__drug-logo  {
+  &__drug-logo {
     display: block;
     position: absolute;
     top: 90px;
@@ -258,6 +236,7 @@ body {
   &_first {
     opacity: 0.5;
   }
+
   &_last {
     opacity: 0.5;
   }
@@ -270,6 +249,7 @@ body {
     display: flex;
     flex-direction: column;
     text-shadow: black 0 0 2px;
+
     .label {
       display: flex;
       width: 7.08333333333vw;
@@ -322,12 +302,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   h1 {
     font-weight: 500;
     font-size: 2.5vw;
     line-height: 2.65625vw;
     color: #ffffff;
   }
+
   p {
     text-align: center;
     width: 56.25rem;
@@ -339,6 +321,7 @@ body {
     line-height: 165%;
     color: #FFFFFF;
   }
+
   .about-us_active {
     a {
       text-decoration: none;
@@ -350,6 +333,7 @@ body {
       //}
     }
   }
+
   .about-us_disabled {
     font-size: 0.875rem;
     line-height: 1.0625rem;
@@ -364,6 +348,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   h1 {
     font-weight: 500;
     font-size: 1.77083333333vw;
@@ -379,11 +364,13 @@ body {
   justify-content: space-between;
   width: 100%;
 }
+
 .our-advantages__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 267px;
+
   .item-img {
     display: flex;
     align-items: center;
@@ -392,10 +379,12 @@ body {
     height: 85px;
 
     margin-bottom: 1.30208333333vw;
+
     img {
       max-width: 100%;
     }
   }
+
   h2 {
     font-weight: 500;
     font-size: 1.25rem;
@@ -403,6 +392,7 @@ body {
     color: #19191B;
     margin-bottom: 0.78125vw;
   }
+
   p {
     font-weight: 400;
     text-align: center;
@@ -419,6 +409,7 @@ body {
   width: 79.85%;
   margin: auto;
   margin-bottom: 5.20833333333vw;
+
   h1 {
     font-weight: 500;
     font-size: 1.77083333333vw;
@@ -440,13 +431,16 @@ body {
   flex-direction: column;
   align-items: center;
   width: 24.0131578947%;
+
   .member-img {
     width: 100%;
     background: #f7f7f7;
+
     img {
       max-width: 100%;
     }
   }
+
   h2 {
     font-weight: 500;
     font-size: 1.25rem;
@@ -454,6 +448,7 @@ body {
     color: #19191B;
     margin-bottom: 0.78125vw;
   }
+
   p {
     font-weight: 400;
     text-align: center;
@@ -469,20 +464,24 @@ body {
   align-items: center;
   width: 100%;
   margin: 0 auto 5.20833333333vw auto;
+
   .our-cafe__slider {
     display: flex;
     margin-bottom: 2.60416666667vw;
+
     .slider-item {
       box-sizing: content-box;
       flex-shrink: 0;
       width: 65.8333333333vw;
       margin-right: 1.04166666667vw;
+
       img {
         max-width: 100%;
 
       }
     }
   }
+
   h1 {
     font-weight: 500;
     font-size: 1.77083333333vw;
@@ -500,12 +499,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   h1 {
     font-weight: 500;
     font-size: 2.5vw;
     line-height: 2.96875vw;
     margin-bottom: 0.78125vw;
   }
+
   p {
     width: 32.96875vw;
     height: 3.75vw;
@@ -515,18 +516,22 @@ body {
     color: #515151;
     margin-bottom: 1.5625vw;
   }
+
   .error404__image {
     width: 40.9895833333vw;
     height: 28.3vw;
     filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.1));
     position: relative;
+
     img {
       display: block;
       max-width: 100%;
     }
+
     .error404__image_back-four, .error404__image_front-four, .error404__image_pizza-heart {
       position: absolute;
     }
+
     .error404__image_back-four, .error404__image_front-four {
       width: 22.4904701398%;
       top: 8.28125vw;
@@ -536,10 +541,12 @@ body {
       left: 2.13541666667vw;
       z-index: -1;
     }
+
     .error404__image_front-four {
       z-index: 2;
       right: 1.51041666667vw;
     }
+
     .error404__image_pizza-heart {
       width: 5.72916666667vw;
       height: 5.72916666667vw;
@@ -549,6 +556,7 @@ body {
       z-index: 3;
     }
   }
+
   .error404__button {
     display: flex;
     align-items: center;
@@ -568,23 +576,27 @@ body {
 
 .delivery {
   width: 79.85%;
-  margin:auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 2.39583333333vw;
+
   .block-links {
     margin-bottom: 2.08333333333vw;
   }
+
   .block-heading {
     margin-bottom: 1.09375vw;
   }
+
   h2 {
     font-weight: 500;
     font-size: 1.770833333331vw;
     line-height: 2.08333333333vw;
     color: #19191B;
     margin-bottom: 2.34375vw;
+
     &:last-of-type {
       width: 29.3229166667vw;
       text-align: center;
@@ -603,6 +615,7 @@ body {
     .delivery-terms__left-column, .delivery-terms__right-column {
       height: 17.0833333333vw;
     }
+
     .delivery-terms__right-column p:nth-child(1), .delivery-terms__left-column p:nth-child(1) {
       margin-bottom: 2.08333333333vw;
     }
@@ -613,6 +626,7 @@ body {
       line-height: 1.875vw;
       color: #515151;
     }
+
     a {
       font-size: 1.04166666667vw;
       line-height: 1.875vw;
@@ -620,20 +634,24 @@ body {
       text-decoration: none;
     }
   }
+
   .delivery-terms__devider {
     width: 1px;
     height: 310px;
     background: #E8E8E8;
   }
+
   form {
     display: flex;
     margin-bottom: 2.08333333333vw;
+
     input[type='search']::-webkit-search-decoration,
     input[type='search']::-webkit-search-cancel-button,
     input[type='search']::-webkit-search-results-button,
     input[type='search']::-webkit-search-results-decoration {
       display: none;
     }
+
     button {
       display: flex;
       align-items: center;
@@ -646,12 +664,14 @@ body {
       border-radius: 5px;
       cursor: pointer;
       color: #079D28;
+
       img {
         margin-right: 0.479375rem;
       }
     }
 
   }
+
   .delivery__input-wrapper {
     display: flex;
     align-items: center;
@@ -660,53 +680,63 @@ body {
     margin-right: 0.833333333333vw;
     border: 1px solid #8F8F8F;
     border-radius: 5px;
+
     input {
       width: 15.625rem;
       font-size: 1rem;
       border: none;
       outline: none;
       color: #8F8F8F;
+
       &::placeholder {
         font-size: 0.875rem;
         color: #8F8F8F;
       }
     }
+
     img {
       max-width: 100%;
       display: block;
-      padding:  0 0.443229166667vw 0 0.9375vw;
+      padding: 0 0.443229166667vw 0 0.9375vw;
     }
 
   }
+
   .delivery-map-wrapper {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
     width: 100%;
     margin-bottom: 3.48958333333vw;
+
     img {
       max-width: 100%;
     }
+
     .delivery-pay-area {
       width: 62.9166666667vw;
       position: absolute;
       left: 14.0625vw;
     }
+
     .delivery-free-area {
       width: 41.6145833333vw;
       position: absolute;
       left: 20.9375vw;
       top: 2.34375vw;
     }
+
     .free-delivery-zone, .pay-delivery-zone {
       position: absolute;
       left: 38px;
       display: flex;
       align-items: center;
+
       p {
         font-size: 1rem;
         color: #000000;
       }
+
       div {
         width: 35px;
         height: 35px;
@@ -714,19 +744,24 @@ body {
         margin-right: 0.520833333333vw;
       }
     }
+
     .free-delivery-zone {
       top: 10.6770833333vw;
     }
+
     .pay-delivery-zone {
       top: 14.0625vw;
     }
+
     .free-delivery-zone__circle {
       background: #079D28;
     }
+
     .pay-delivery-zone__circle {
-      background:  #4487C3;
+      background: #4487C3;
     }
   }
+
   .delivery-information-block {
     display: flex;
     justify-content: space-between;
@@ -738,10 +773,12 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
+
       img {
         width: 3.33333333333vw;
         height: 3.33333333333vw;
       }
+
       h4 {
         width: 11.1458333333vw;
         height: 2.44791666667vw;
@@ -750,6 +787,7 @@ body {
         font-size: 1.04166666667vw;
         text-align: center;
       }
+
       p {
         width: 14vw;
         font-size: 0.833333333333vw;
@@ -757,6 +795,7 @@ body {
         text-align: center;
         color: #515151;
       }
+
       .delivery-information-block__img {
         display: flex;
         align-items: center;
@@ -766,12 +805,14 @@ body {
         margin-bottom: 0.572916666667vw;
 
       }
+
       &:first-of-type {
         img {
           width: 4.6875vw;
           height: 4.6875vw;
         }
       }
+
       &:last-of-type {
         img {
           width: 4.79166666667vw;
@@ -782,11 +823,13 @@ body {
   }
 
 }
+
 .single-news {
   display: flex;
   width: 79.85%;
   margin: auto;
   padding-top: 2.44791666667vw;
+
   .block-links {
     margin-bottom: 0.260416666667vw;
   }
@@ -795,6 +838,7 @@ body {
 
 .single-news-socials {
   margin-right: 2.96875vw;
+
   .single-news-socials__back-to-previous, .single-news-socials__item {
     display: flex;
     align-items: center;
@@ -805,30 +849,37 @@ body {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
     border-radius: 10px;
   }
+
   .single-news-socials__item {
     margin-bottom: 1.04166666667vw;
     cursor: pointer;
   }
+
   .single-news-socials__back-to-previous {
     margin-bottom: 4.94791666667vw;
     cursor: pointer;
   }
 }
+
 .single-news-date-wrapper {
   display: flex;
   align-items: center;
   margin-bottom: 2.08333333333vw;
+
   img {
     margin-right: 0.572916666667vw;
   }
+
   .single-news-date {
     font-size: 1rem;
     color: #19191B;
     opacity: 0.6;
   }
 }
+
 .single-news-content-wrapper {
   width: 83.0921052632%;
+
   h1 {
     font-size: 3rem;
     font-weight: 500;
@@ -845,13 +896,16 @@ body {
 .single-news__current-news {
   width: 39.0625vw;
   margin-right: 2.08333333333vw;
+
   .current-news-img {
     margin-bottom: 2.08333333333vw;
+
     img {
       width: 39.0625vw;
       height: 24.5833333333vw;
     }
   }
+
   p {
     font-size: 1rem;
     line-height: 1.625rem;
@@ -863,6 +917,7 @@ body {
 .last-news {
   display: flex;
   flex-direction: column;
+
   h2 {
     font-weight: 500;
     font-size: 1.45833333333vw;
@@ -870,12 +925,14 @@ body {
     color: #19191B;
   }
 }
+
 .last-news__item {
   width: 24.6354166667vw;
   background: #ffffff;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
   margin-bottom: 1.5625vw;
   border-radius: 10px;
+
   h3 {
     width: 21.7708333333vw;
     padding: 1.30208333333vw 1.5625vw 0 1.30208333333vw;
@@ -885,6 +942,7 @@ body {
     line-height: 1.875rem;
     color: #19191B;
   }
+
   p {
     width: 22.03125vw;
     margin-bottom: 1.04166666667vw;
@@ -893,6 +951,7 @@ body {
     line-height: 1.4375rem;
     color: #515151;
   }
+
   .last-news__item-link-and-date {
     display: flex;
     justify-content: space-between;
@@ -901,6 +960,7 @@ body {
     padding: 1.04166666667vw 0 1.30208333333vw 0;
     border-top: 1px solid #E8E8E8;
   }
+
   a {
     text-decoration: none;
     font-size: 1rem;
@@ -908,6 +968,7 @@ body {
     color: #079D28;
     border-bottom: 1px solid #079D28;
   }
+
   .news-item-date {
     font-size: 0.875rem;
     line-height: 1.0625rem;
@@ -923,6 +984,7 @@ body {
   width: 79.85%;
   margin: auto;
   padding-top: 2.08333333333vw;
+
   .block-links {
     margin-bottom: 2.08333333333vw;
   }
@@ -931,9 +993,11 @@ body {
 .basket__content {
   display: flex;
   width: 100%;
+
   .basket-items {
     width: 78.9473684211%;
     margin-right: 2.1875vw;
+
     header {
       display: flex;
       align-items: center;
@@ -941,14 +1005,17 @@ body {
       height: 3.28125vw;
       border-radius: 10px 10px 0px 0px;
       background: #F1F1F1;
+
       span {
         font-size: 0.9375vw;
         font-weight: 500;
         color: #19191B;
+
         &:nth-child(1) {
           padding-left: 3.4375vw;
           margin-right: 28.3854166667vw;
         }
+
         &:nth-child(2) {
           margin-right: 10.15625vw;
         }
@@ -956,6 +1023,7 @@ body {
     }
   }
 }
+
 .basket-items__item {
   display: flex;
   align-items: center;
@@ -965,6 +1033,7 @@ body {
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
   margin-bottom: 0.78125vw;
+
   .basket-items__img {
     display: flex;
     align-items: center;
@@ -973,11 +1042,13 @@ body {
     height: 5.78125vw;
     margin-left: 1.30208333333vw;
     margin-right: 2.08333333333vw;
+
     img {
       display: block;
       max-width: 100%;
     }
   }
+
   .basket-items__food-name {
     width: 12.03125vw;
     font-size: 1.14583333333vw;
@@ -986,16 +1057,19 @@ body {
     line-height: 1.35416666667vw;
     margin-right: 9.89583333333vw;
   }
+
   .basket-items__food-price {
     margin-right: 6.875vw;
     font-size: 1.45833333333vw;
     font-weight: 500;
     color: #19191B;
   }
+
   .basket-items__food-count {
     display: flex;
     margin-right: 4.84375vw;
   }
+
   .food-count-minus, .food-count-plus {
     display: flex;
     align-items: center;
@@ -1006,6 +1080,7 @@ body {
     cursor: pointer;
     font-size: 1.30208333333vw;
   }
+
   .food-count {
     width: 2.55208333333vw;
     height: 2.96875vw;
@@ -1015,17 +1090,21 @@ body {
     align-items: center;
     justify-content: center;
   }
+
   .food-count-minus {
     border-radius: 5px 0px 0px 5px;
   }
+
   .food-count-plus {
     border-radius: 0px 5px 5px 0px;
   }
+
   .basket-items__delete-item {
     width: 1.35416666667vw;
     height: 1.35416666667vw;
     opacity: 0.7;
     cursor: pointer;
+
     img {
       width: 100%;
     }
@@ -1047,6 +1126,7 @@ body {
     font-weight: 500;
     color: #19191B;
   }
+
   .basket-add-item {
     width: 100%;
     background: #ffffff;
@@ -1054,20 +1134,25 @@ body {
     border-radius: 10px;
     padding: 1.09375vw 0 1.5625vw 1.14583333333vw;
     margin-bottom: 0.833333333333vw;
+
     .basket-add-item__img {
       width: 5.20833333333vw;
       height: 5.20833333333vw;
+
       img {
         max-width: 100%;
       }
     }
+
     .basket-add-item__description {
       display: flex;
       margin-bottom: 0.625vw;
+
       .basket-add-item__text {
         display: flex;
         flex-direction: column;
         padding: 0.833333333333vw 0 0 0.833333333333vw;
+
         .basket-add-item__food-name {
           width: 6.82291666667vw;
           margin-bottom: 0.520833333333vw;
@@ -1075,6 +1160,7 @@ body {
           line-height: 1.09375vw;
           color: #19191B;
         }
+
         .basket-add-item__food-price {
           font-size: 0.9375vw;
           font-weight: 500;
@@ -1083,6 +1169,7 @@ body {
       }
     }
   }
+
   .basket-add__button {
     display: flex;
     align-items: center;
@@ -1097,6 +1184,7 @@ body {
     color: #079D28;
     cursor: pointer;
   }
+
   .pagination-switch {
     padding-left: 1.30208333333vw;
 
@@ -1106,10 +1194,12 @@ body {
 .basket-items-ordering {
   width: 100%;
 }
+
 .basket-items-form {
   width: 100%;
   padding-top: 1.77083333333vw;
   margin-bottom: 5.20833333333vw;
+
   input {
     width: 15.8333333333vw;
     height: 2.86458333333vw;
@@ -1119,10 +1209,12 @@ body {
     margin-right: 1.04166666667vw;
     outline: none;
     font-size: 1rem;
+
     &::placeholder {
       font-size: 0.875rem;
     }
   }
+
   .basket-items-ordering__ordering-price {
     width: 24.53125vw;
     justify-content: flex-end;
@@ -1134,16 +1226,19 @@ body {
       font-size: 1.04166666667vw;
       color: #19191B;
     }
+
     .price-count {
       font-size: 1.875vw;
       font-weight: 700;
       color: #079D28;
     }
   }
+
   .basket-items-form-promo {
     display: flex;
     align-items: center;
     margin-bottom: 2.08333333333vw;
+
     h3 {
       display: inline-block;
       width: 6.61458333333vw;
@@ -1155,6 +1250,7 @@ body {
     }
 
   }
+
   .basket-items-form__apply-promo {
     width: 12.34375vw;
     height: 2.86458333333vw;
@@ -1165,6 +1261,7 @@ body {
     border: 1px solid #079D28;
     border-radius: 5px;
   }
+
   .basket-items-form__checkout {
     width: 100%;
     height: 2.86458333333vw;
@@ -1179,6 +1276,7 @@ body {
 
   }
 }
+
 //BASKET POPUP
 .basket-ordering-popup {
   display: flex;
@@ -1188,9 +1286,11 @@ body {
   width: 100vw;
   height: 100vw;
   background: rgba(0, 0, 0, 0.5);
+
   .basket-ordering-popup__frame-wrapper {
     display: flex;
   }
+
   .popup-form-made-order {
     width: 100%;
     height: 2.86458333333vw;
@@ -1202,32 +1302,38 @@ body {
     color: #ffffff;
     font-size: 0.9375vw;
   }
+
   .form-content {
     padding-top: 3.125vw;
     display: flex;
     justify-content: space-between;
     width: 52.7083333333vw;
+
     .checkout-address, .checkout-when-to-deliver {
       font-size: 1.04166666667vw;
       font-weight: 500;
       color: #19191B;
       margin-bottom: 1.04166666667vw;
+
       h3 {
         font-size: 1.04166666667vw;
         margin-bottom: 1.30208333333vw;
       }
+
       .checkout-address__input-wrapper, .checkout-when-to-deliver__input-wrapper {
         display: flex;
         align-items: center;
         padding-bottom: 0.260416666667vw;
         margin-bottom: 0.78125vw;
-        border-bottom:  1px solid #C9C9C9;
+        border-bottom: 1px solid #C9C9C9;
+
         .green-dot {
           width: 0.416666666667vw;
-          height:  0.416666666667vw;
+          height: 0.416666666667vw;
           border-radius: 50%;
           background: #079D28;
         }
+
         .input-address, .input-when {
           width: 97%;
           padding-left: 0.520833333333vw;
@@ -1236,6 +1342,7 @@ body {
           border: none;
         }
       }
+
       .add-address, .change-when {
         padding-left: 0.78125vw;
         font-size: 0.833333333333vw;
@@ -1244,11 +1351,13 @@ body {
         outline: none;
         color: #079D28;
         cursor: pointer;
+
         &:hover {
           color: #81f07f;
         }
       }
     }
+
     .checkout-when-to-deliver {
       padding-top: 2.08333333333vw;
     }
@@ -1258,12 +1367,14 @@ body {
         font-size: 0.875rem;
         color: #8F8F8F;
       }
-      .checkout-contacts__name,.checkout-contacts__phone {
+
+      .checkout-contacts__name, .checkout-contacts__phone {
         display: flex;
         flex-direction: column;
         padding-bottom: 5px;
-        border-bottom:  1px solid #C9C9C9;
+        border-bottom: 1px solid #C9C9C9;
         margin-bottom: 1.04166666667vw;
+
         .input-name, .input-phone {
           width: 100%;
           height: 26px;
@@ -1276,8 +1387,8 @@ body {
     }
 
 
-
   }
+
   .popup-form__checkout, .popup-form__your-order {
     h2 {
       width: 14.6354166667vw;
@@ -1288,35 +1399,42 @@ body {
 
     }
   }
+
   .popup-form__checkout {
     display: flex;
     flex-direction: column;
 
   }
+
   .popup-form__your-order {
     width: 20.46875vw;
     display: flex;
     flex-direction: column;
+
     .popup-form__your-order-items {
       box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
       border-radius: 10px;
+
       .your-order-item:nth-child(1) {
         border-radius: 10px 10px 0 0;
       }
+
       .your-order-item:nth-last-child(1) {
         border-radius: 0px 0px 10px 10px;
         border-bottom: none;
       }
 
     }
+
     .your-order-item {
       display: flex;
       align-items: center;
       width: 100%;
       height: 5.46875vw;
       padding-left: 1.04166666667vw;
-      border-bottom: 1px solid rgba(25, 25, 27,0.1);
+      border-bottom: 1px solid rgba(25, 25, 27, 0.1);
       background: #ffffff;
+
       .your-order-item__img {
         display: flex;
         align-items: center;
@@ -1324,13 +1442,16 @@ body {
         width: 4.42708333333vw;
         height: 3.4375vw;
         margin-right: 0.78125vw;
+
         img {
           max-width: 100%;
         }
       }
+
       .your-order-text-content {
         display: flex;
         flex-direction: column;
+
         .your-order-item-name {
           width: 12.5vw;
           font-size: 0.833333333333vw;
@@ -1338,6 +1459,7 @@ body {
           font-weight: 500;
           margin-bottom: 0.520833333333vw;
         }
+
         .your-order-item-price {
           font-size: 0.833333333333vw;
           font-weight: 500;
@@ -1345,6 +1467,7 @@ body {
         }
       }
     }
+
     .your-order-total {
       width: 100%;
       display: flex;
@@ -1352,11 +1475,13 @@ body {
       justify-content: flex-end;
       padding-top: 1.97916666667vw;
       margin-bottom: 1.97916666667vw;
+
       span:nth-child(1) {
         font-size: 1.04166666667vw;
         margin-right: 0.520833333333vw;
         color: #19191B;
       }
+
       .your-order-total__price {
         font-size: 1.77083333333vw;
         font-weight: 500;
@@ -1366,6 +1491,7 @@ body {
 
     }
   }
+
   .popup-form__delivery-toggler {
     display: flex;
     align-items: center;
@@ -1376,6 +1502,7 @@ body {
     margin-bottom: 2.08333333333vw;
     background: #EEEEEE;
     border-radius: 5px;
+
     span {
       display: flex;
       justify-content: center;
@@ -1387,6 +1514,7 @@ body {
       z-index: 1;
       cursor: pointer;
     }
+
     .toggle-selected {
       position: absolute;
       background: #ffffff;
@@ -1410,6 +1538,7 @@ body {
     border-radius: 10px;
     padding-bottom: 3.125vw;
   }
+
   .basket-ordering-popup__close {
     display: flex;
     align-items: center;
@@ -1417,7 +1546,7 @@ body {
     width: 3.59375vw;
     height: 3.59375vw;
 
-    background: rgba(255,255,255,1);
+    background: rgba(255, 255, 255, 1);
     border-radius: 10px;
   }
 }
@@ -1434,24 +1563,29 @@ body {
   display: flex;
   height: 47px;
   align-items: center;
+
   span {
     width: 12px;
     height: 27px;
     cursor: pointer;
+
     img {
       width: 12px;
       height: 27px;
     }
   }
+
   span:last-of-type {
     transform: rotate(180deg);
   }
+
   .pagination-switch__number-of-pages {
     display: flex;
     border: 1px solid #E8E8E8;
     border-radius: 5px;
     margin: 0 50px;
     user-select: none;
+
     div {
       display: flex;
       align-items: center;
@@ -1461,6 +1595,7 @@ body {
       color: #515151;
       border: 1px solid #E8E8E8;
     }
+
     .number-of-pages__page-square.current {
       background: #E8E8E8;
     }
@@ -1487,15 +1622,17 @@ body {
   flex-direction: column;
   width: 1600px;
   margin: 0 auto 50px auto;
+
   h3 {
-        font-family: "Rubik", sans-serif;
-        font-weight: 400;
-        font-size: 34px;
-        font-weight: 400;
-        margin-bottom: 2.08333333333vw;
-      }
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 2.08333333333vw;
+  }
 
 }
+
 .drug-category {
   display: flex;
   flex-wrap: wrap;
@@ -1510,7 +1647,7 @@ body {
   justify-content: space-around;
   width: 300px;
   height: 460px;
-  padding: 20px 0 ;
+  padding: 20px 0;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 5px;
   margin-right: 15px;
@@ -1520,19 +1657,23 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
   &__image {
     width: 220px;
     height: 268px;
   }
+
   &__title {
     font-weight: 500;
     font-size: 18px;
     color: #19191b;
     margin-bottom: 10px;
   }
+
   &__short-description {
     text-align: center;
   }
+
   &-button {
     display: flex;
     height: 50px;
@@ -1563,6 +1704,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   margin: 0 auto;
+
   &__content {
     background: #fff;
     border: none;
@@ -1580,23 +1722,22 @@ body {
 }
 
 
-
-
-
-
 .block-links_active-dark {
   font-size: 0.875rem;
   color: #19191B;
+
   a {
     text-decoration: none;
     font-weight: normal;
     font-size: 0.875rem;
     color: #19191B;
+
     &:visited {
       text-decoration: none;
     }
   }
 }
+
 .block-links_disabled {
   font-size: 0.875rem;
   line-height: 1.0625rem;
@@ -1610,7 +1751,6 @@ body {
 .bracket-disabled {
   stroke: #cccccc;
 }
-
 
 
 .food-black-banners {
@@ -1627,13 +1767,16 @@ body {
     line-height: 2.96875vw;
     margin-bottom: 1.04166666667vw;
   }
+
   .block-links {
     margin-bottom: 2.08333333333vw;
   }
+
   .food-black-banners__gallery {
     width: 100%;
     display: flex;
     justify-content: space-between;
+
     .black-banner-item {
       display: flex;
       flex-direction: column;
@@ -1641,836 +1784,889 @@ body {
       width: 32.4342105263%;
       height: 18.75vw;
       border-radius: 10px;
-    //  &:nth-child(1) {
-    //    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/images/food/chicken-burger.png");
-    //    background-size: cover;
-    //  }
-    //  &:nth-child(2) {
-    //    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/images/food/sochniy-burger.png");
-    //    background-size: cover;
-    //  }
-    //  &:nth-child(3) {
-    //    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/images/food/French-burger.png");
-    //    background-size: cover;
-    //  }
-    //}
-    .black-banner-item__text-content {
-      padding: 7.1875vw 0 0 1.77083333333vw;
-      h2 {
-        margin-bottom: 0.78125vw;
-        font-weight: 500;
-        font-size: 1.77083333333vw;
-        line-height: 2.08333333333vw;
-        color: #ffffff;
-      }
-      p {
-        width: 20.3645833333vw;
-        height: 5.41666666667vw;
-        color: #ffffff;
-        font-size: 0.833333333333vw;
-        line-height: 1.35416666667vw;
-        font-weight: 400;
-      }
-    }
-  }
-}
+      //  &:nth-child(1) {
+      //    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/images/food/chicken-burger.png");
+      //    background-size: cover;
+      //  }
+      //  &:nth-child(2) {
+      //    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/images/food/sochniy-burger.png");
+      //    background-size: cover;
+      //  }
+      //  &:nth-child(3) {
+      //    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/images/food/French-burger.png");
+      //    background-size: cover;
+      //  }
+      //}
+      .black-banner-item__text-content {
+        padding: 7.1875vw 0 0 1.77083333333vw;
 
-.subscribe {
-  width: 79.85%;
-  height: 15.78125vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin: 0 auto 5.20833333333vw auto;
-
-
-  .subscribe__content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 11.4583333333vw;
-    background: #f9f9f9;
-
-    border-radius: 10px;
-    .subscribe-image {
-      width: 18.2291666667vw;
-      height: 15.78125vw;
-      margin-top: -4.21875vw;
-      img {
-        width: 100%;
-        display: block;
-      }
-    }
-    .subscribe-text {
-      display: flex;
-      position: relative;
-      span {
-        position: absolute;
-        right: 10.9375vw;
-        top: 3.85416666667vw;
-        width: 24.6354166667vw;
-        font-size: 12px;
-        line-height: 19px;
-        color: #8F8F8F;
-      }
-      p {
-        width: 21.1458333333vw;
-        height: 5.15625vw;
-        margin: 0 1.82291666667vw 0 -1.09375vw;
-        font-size: 1.45833333333vw;
-        padding-top: 0.3125vw;
-      }
-      .subscribe-input {
-        width: 25.6770833333vw;
-        height: 2.96875vw;
-        border-radius: 5px;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-        margin-right: 1.04166666667vw;
-
-        input {
-          width: 100%;
-          height: 2.96875vw;
-          outline: none;
-          border: none;
-          border-radius: 5px;
-          padding-left: 1.35416666667vw;
-          &::placeholder {
-            font-size: 0.875rem;
-            color: #8F8F8F;
-          }
+        h2 {
+          margin-bottom: 0.78125vw;
+          font-weight: 500;
+          font-size: 1.77083333333vw;
+          line-height: 2.08333333333vw;
+          color: #ffffff;
         }
-      }
 
-      form {
-        display: flex;
-        padding-top: 0.3125vw;
-
-        button {
-          width: 8.90625vw;
-          height: 2.96875vw;
-          border: 1px solid #079D28;
-          border-radius: 5px;
-          color: #079D28;
+        p {
+          width: 20.3645833333vw;
+          height: 5.41666666667vw;
+          color: #ffffff;
           font-size: 0.833333333333vw;
+          line-height: 1.35416666667vw;
           font-weight: 400;
-          outline: none;
-          cursor: pointer;
         }
-
       }
     }
   }
-}
 
-
-
-
-
-
-.food-list {
-  display: flex;
-  flex-direction: column;
-  width: 79.85%;
-  align-items: center;
-  margin: 0 auto 5.72916666667vw auto;
-  flex-wrap: wrap;
-  .food-sort {
-    width: 543.28px;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    align-self: flex-start;
-    margin-bottom: 1.5625vw;
-    h3 {
-      font-size: 1rem;
-      font-weight: 500;
-      line-height: 1.1875rem;
-      color: #19191B;
-    }
-    span {
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.1875rem;
-      color: #19191B;
-    }
-    .sort-select {
-      display: block;
-      font-size: 1rem;
-      font-weight: 400;
-      color: #19191B;
-      line-height: 1.1875rem;
-      padding: 11px 25px 10px 20px;
-      max-width: 100%;
-      box-sizing: border-box;
-      border: 1px solid #E8E8E8;
-      border-radius: 4px;
-      -moz-appearance: none;
-      -webkit-appearance: none;
-      appearance: none;
-      background-color: #fff;
-      background-repeat: no-repeat, repeat;
-      //background-image: url("../assets/images/icons/select-bracket.png");
-      background-position: right 8px top 50%, 0 0;
-      background-size: .65em auto, 100%;
-      outline: none;
-      cursor: pointer;
-    }
-
-  }
-  .food-block {
-    margin-bottom: 1.04166666667vw;
-  }
-  .food-block__card {
-    height: 33.8541666667vw;
-  }
-  .pagination-switch {
-    margin-top: 1.5625vw;
-  }
-}
-
-.news {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin: auto;
-  padding-top: 2.08333333333vw;
-  .block-links {
-    margin-bottom: 2.60416666667vw;
-  }
-
-  .news-block {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .subscribe {
     width: 79.85%;
-    .news-block__item {
+    height: 15.78125vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 auto 5.20833333333vw auto;
+
+
+    .subscribe__content {
       display: flex;
-      flex-direction: column;
       align-items: center;
-      width: 25.6770833333vw;
-      height: 29.4791666667vw;
-      box-shadow: 0px 0.520833333333vw 2.08333333333vw rgba(0, 0, 0, 0.05);
+      width: 100%;
+      height: 11.4583333333vw;
+      background: #f9f9f9;
+
       border-radius: 10px;
-      background: #ffffff;
-      margin-bottom: 2.60416666667vw;
-      .news-block__image {
-        box-sizing: content-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 87.8296146045%;
-        height: 15.7291666667vw;
-        margin-bottom: 1.5625vw;
-        padding-top: 1.5625vw;
+
+      .subscribe-image {
+        width: 18.2291666667vw;
+        height: 15.78125vw;
+        margin-top: -4.21875vw;
 
         img {
-          max-width: 100%;
+          width: 100%;
           display: block;
         }
       }
-      .news-block__text-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-      }
-      .news-date {
-        display: inline-block;
-        align-self: flex-start;
-        margin-bottom: 0.208333333333vw;
-        font-weight: 400;
-        font-size: 0.875rem;
-        line-height: 1.0625rem;
-        color: #A8A8A8;
-      }
-      h3 {
-        width: 21.1458333333vw;
-        font-weight: 400;
-        font-size: 1.45833333333vw;
-        line-height: 1.97916666667vw;
-        color: #19191B;
-        margin-bottom: 0.78125vw;
-      }
-      p {
-        width: 22vw;
-        font-size: 0.833333333333vw;
-        line-height: 1.25vw;
-        color: #515151;
 
+      .subscribe-text {
+        display: flex;
+        position: relative;
+
+        span {
+          position: absolute;
+          right: 10.9375vw;
+          top: 3.85416666667vw;
+          width: 24.6354166667vw;
+          font-size: 12px;
+          line-height: 19px;
+          color: #8F8F8F;
+        }
+
+        p {
+          width: 21.1458333333vw;
+          height: 5.15625vw;
+          margin: 0 1.82291666667vw 0 -1.09375vw;
+          font-size: 1.45833333333vw;
+          padding-top: 0.3125vw;
+        }
+
+        .subscribe-input {
+          width: 25.6770833333vw;
+          height: 2.96875vw;
+          border-radius: 5px;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          margin-right: 1.04166666667vw;
+
+          input {
+            width: 100%;
+            height: 2.96875vw;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding-left: 1.35416666667vw;
+
+            &::placeholder {
+              font-size: 0.875rem;
+              color: #8F8F8F;
+            }
+          }
+        }
+
+        form {
+          display: flex;
+          padding-top: 0.3125vw;
+
+          button {
+            width: 8.90625vw;
+            height: 2.96875vw;
+            border: 1px solid #079D28;
+            border-radius: 5px;
+            color: #079D28;
+            font-size: 0.833333333333vw;
+            font-weight: 400;
+            outline: none;
+            cursor: pointer;
+          }
+
+        }
       }
     }
   }
-  .pagination-switch {
-    margin-bottom: 5.20833333333vw;
+
+
+  .food-list {
+    display: flex;
+    flex-direction: column;
+    width: 79.85%;
+    align-items: center;
+    margin: 0 auto 5.72916666667vw auto;
+    flex-wrap: wrap;
+
+    .food-sort {
+      width: 543.28px;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      align-self: flex-start;
+      margin-bottom: 1.5625vw;
+
+      h3 {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.1875rem;
+        color: #19191B;
+      }
+
+      span {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.1875rem;
+        color: #19191B;
+      }
+
+      .sort-select {
+        display: block;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #19191B;
+        line-height: 1.1875rem;
+        padding: 11px 25px 10px 20px;
+        max-width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #E8E8E8;
+        border-radius: 4px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #fff;
+        background-repeat: no-repeat, repeat;
+        //background-image: url("../assets/images/icons/select-bracket.png");
+        background-position: right 8px top 50%, 0 0;
+        background-size: .65em auto, 100%;
+        outline: none;
+        cursor: pointer;
+      }
+
+    }
+
+    .food-block {
+      margin-bottom: 1.04166666667vw;
+    }
+
+    .food-block__card {
+      height: 33.8541666667vw;
+    }
+
+    .pagination-switch {
+      margin-top: 1.5625vw;
+    }
   }
-}
 
-.contacts {
-  width: 100%;
-  display: flex;
-
-  .contacts-block {
-    width: 65.8333333333%;
-    margin: auto;
+  .news {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 2.08333333333vw;
-    .contacts-block__content {
-      display: flex;
-      width: 100%;
-      justify-content: space-between;
-      margin-bottom: 2.08333333333vw;
-      .contacts-socials {
-        display: flex;
-        width: 14.5569620253%;
-        justify-content: space-between;
-      }
-    }
-    .contacts-block__info {
-      display: flex;
-      width: 76.7405063291%;
-      justify-content: space-between;
-    }
-  }
-
-
-  .block-links {
-    margin-bottom: 2.29166666667vw;
-  }
-  .contacts-info-item {
-    display: flex;
-    align-items: center;
-    p {
-      font-size: 0.729166666667vw;
-      line-height: 0.885416666667vw;
-      color: #515151;
-      margin-bottom: 0.208333333333vw;
-    }
-    h3 {
-      font-weight: 700;
-      font-size: 1.04166666667vw;
-      line-height: 1.25vw;
-    }
-  }
-  .contacts-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.5vw;
-    height: 2.5vw;
-    margin-right: 0.520833333333vw;
-    background: #079D28;
-    border-radius: 50%;
-    div {
-      width: 1.19791666667vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        max-width: 100%;
-      }
-    }
-  }
-  .contacts-block__map {
-    position: relative;
     width: 100%;
-    img {
-      max-width: 100%;
-    }
-    margin-bottom: 5.20833333333vw;
-  }
-  .contacts-map-marker {
-    width: 2.6734375vw;
-    height: 3.81927083333vw;
-    img {
-      max-width: 100%;
-    }
-    position: absolute;
-    top: 35%;
-    left: 50%;
-  }
-}
+    margin: auto;
+    padding-top: 2.08333333333vw;
 
+    .block-links {
+      margin-bottom: 2.60416666667vw;
+    }
 
-.stocks {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 79.85%;
-  margin: auto;
-  padding-top: 2.08333333333vw;
-  .block-links {
-    margin-bottom: 2.08333333333vw;
+    .news-block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 79.85%;
+
+      .news-block__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25.6770833333vw;
+        height: 29.4791666667vw;
+        box-shadow: 0px 0.520833333333vw 2.08333333333vw rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        background: #ffffff;
+        margin-bottom: 2.60416666667vw;
+
+        .news-block__image {
+          box-sizing: content-box;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 87.8296146045%;
+          height: 15.7291666667vw;
+          margin-bottom: 1.5625vw;
+          padding-top: 1.5625vw;
+
+          img {
+            max-width: 100%;
+            display: block;
+          }
+        }
+
+        .news-block__text-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+        }
+
+        .news-date {
+          display: inline-block;
+          align-self: flex-start;
+          margin-bottom: 0.208333333333vw;
+          font-weight: 400;
+          font-size: 0.875rem;
+          line-height: 1.0625rem;
+          color: #A8A8A8;
+        }
+
+        h3 {
+          width: 21.1458333333vw;
+          font-weight: 400;
+          font-size: 1.45833333333vw;
+          line-height: 1.97916666667vw;
+          color: #19191B;
+          margin-bottom: 0.78125vw;
+        }
+
+        p {
+          width: 22vw;
+          font-size: 0.833333333333vw;
+          line-height: 1.25vw;
+          color: #515151;
+
+        }
+      }
+    }
+
+    .pagination-switch {
+      margin-bottom: 5.20833333333vw;
+    }
   }
-  .super-conditions {
-    //background: url("../assets/images/stocks-banner-super-conditions.png");
-    h1, p, .stock-item__banner-description {
-      width: 24.2708333333vw;
-    }
-    h1 {
-      margin-bottom: 0.9375vw;
-    }
-    .stock-item__banner-description {
-      width: 22.2395833333vw;
-      padding-top: 1.04166666667vw;
-    }
-    .stocks-item__banner-text {
-      align-self: flex-end;
-      padding-top: 2.70833333333vw;
-      padding-right: 3.07291666667vw;
-    }
-    p {
-      font-size: 1.04166666667vw;
-      line-height: 1.45833333333vw;
-    }
-  }
-  .one-equals-two {
-    justify-content: center;
-    position: relative;
-    //background: url("../assets/images/stocks-12back.png");
-    .stock-item__banner-description {
-      padding-top: 0.833333333333vw;
-      width: 15.1041666667vw;
-    }
-    .stocks-item__banner-text {
+
+  .contacts {
+    width: 100%;
+    display: flex;
+
+    .contacts-block {
+      width: 65.8333333333%;
+      margin: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-top: 2.08333333333vw;
+
+      .contacts-block__content {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 2.08333333333vw;
+
+        .contacts-socials {
+          display: flex;
+          width: 14.5569620253%;
+          justify-content: space-between;
+        }
+      }
+
+      .contacts-block__info {
+        display: flex;
+        width: 76.7405063291%;
+        justify-content: space-between;
+      }
     }
 
-    .one-equals-two__pizza-pic_first, .one-equals-two__pizza-pic_second {
-      position: absolute;
-    }
-    .one-equals-two__pizza-pic_first {
-      width: 13.90625vw;
-      height: 12.1354166667vw;
-      img {
-        max-width: 100%;
-      }
-      top: 0;
-      left: 0.9375vw;
-    }
-    .one-equals-two__pizza-pic_second {
-      width: 21.5625vw;
-      height: 12.4479166667vw;
-      img {
-        max-width: 100%;
-      }
-      right: 0.572916666667vw;
-      bottom: 0;
-    }
-    p {
-      width: 15.1041666667vw;
-      font-size: 1.30208333333vw;
-      line-height: 1.82291666667vw;
-      text-align: center;
-    }
-  }
 
-  .it-wont-be-cheaper {
-    //background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/stocks-it-want-be-cheaper.png");
-    h1 {
-      width: 29.9479166667vw;
-      height: 6.5625vw;
-      font-size: 3.125vw;
-      line-height: 3.4375vw;
-      margin-bottom: 1.041666666671vw;
-      letter-spacing: -0.03em;
+    .block-links {
+      margin-bottom: 2.29166666667vw;
     }
-    .stock-item__banner-description {
-      width: 28.5416666667vw;
-      padding-top: 1.45833333333vw;
+
+    .contacts-info-item {
+      display: flex;
+      align-items: center;
+
       p {
-        width: 25.5208333333vw;
-        font-size: 1.041666666671vw;
+        font-size: 0.729166666667vw;
+        line-height: 0.885416666667vw;
+        color: #515151;
+        margin-bottom: 0.208333333333vw;
+      }
+
+      h3 {
+        font-weight: 700;
+        font-size: 1.04166666667vw;
+        line-height: 1.25vw;
       }
     }
-  }
-  .lunch-menu {
-    //background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/images/stocks-lunch-menu.png");
-    h1 {
-      font-size: 3.125vw;
-      line-height: 3.4375vw;
-      letter-spacing: -0.015em;
-      width: 36.9791666667vw;
-      height: 6.5625vw;
-      margin-bottom: 1.04166666667vw;
+
+    .contacts-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2.5vw;
+      height: 2.5vw;
+      margin-right: 0.520833333333vw;
+      background: #079D28;
+      border-radius: 50%;
+
+      div {
+        width: 1.19791666667vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          max-width: 100%;
+        }
+      }
     }
-    .stock-item__banner-description {
-      padding-top: 1.45833333333vw;
-      width: 28.5416666667vw;
+
+    .contacts-block__map {
+      position: relative;
+      width: 100%;
+
+      img {
+        max-width: 100%;
+      }
+
+      margin-bottom: 5.20833333333vw;
+    }
+
+    .contacts-map-marker {
+      width: 2.6734375vw;
+      height: 3.81927083333vw;
+
+      img {
+        max-width: 100%;
+      }
+
+      position: absolute;
+      top: 35%;
+      left: 50%;
+    }
+  }
+
+
+  .stocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 79.85%;
+    margin: auto;
+    padding-top: 2.08333333333vw;
+
+    .block-links {
+      margin-bottom: 2.08333333333vw;
+    }
+
+    .super-conditions {
+      //background: url("../assets/images/stocks-banner-super-conditions.png");
+      h1, p, .stock-item__banner-description {
+        width: 24.2708333333vw;
+      }
+
+      h1 {
+        margin-bottom: 0.9375vw;
+      }
+
+      .stock-item__banner-description {
+        width: 22.2395833333vw;
+        padding-top: 1.04166666667vw;
+      }
+
+      .stocks-item__banner-text {
+        align-self: flex-end;
+        padding-top: 2.70833333333vw;
+        padding-right: 3.07291666667vw;
+      }
+
       p {
         font-size: 1.04166666667vw;
+        line-height: 1.45833333333vw;
       }
     }
 
-  }
-  .stocks-item__banner-text {
-    padding: 3.22916666667vw 0 0 2.656252vw;
-  }
-}
-.stocks-item {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  height: 17.2916666667vw;
-  margin-bottom: 2.08333333333vw;
-  .stocks-item__banner{
-    display: flex;
-    flex-direction: column;
-    width: 52.4479166667vw;
-    height: 17.2916666667vw;
-    border-radius: 10px;
-    background-size: cover;
-    h1 {
-      font-family: 'Rubik Mono One', sans-serif;
-      font-size: 3.125vw;
-      color: #ffffff;
-      font-weight: 400;
-      line-height: 3.4375vw;
-      letter-spacing: -0.015em;
-    }
-    .stock-item__banner-description {
-      border-top: 3px solid #FFFFFF;
+    .one-equals-two {
+      justify-content: center;
+      position: relative;
+      //background: url("../assets/images/stocks-12back.png");
+      .stock-item__banner-description {
+        padding-top: 0.833333333333vw;
+        width: 15.1041666667vw;
+      }
+
+      .stocks-item__banner-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .one-equals-two__pizza-pic_first, .one-equals-two__pizza-pic_second {
+        position: absolute;
+      }
+
+      .one-equals-two__pizza-pic_first {
+        width: 13.90625vw;
+        height: 12.1354166667vw;
+
+        img {
+          max-width: 100%;
+        }
+
+        top: 0;
+        left: 0.9375vw;
+      }
+
+      .one-equals-two__pizza-pic_second {
+        width: 21.5625vw;
+        height: 12.4479166667vw;
+
+        img {
+          max-width: 100%;
+        }
+
+        right: 0.572916666667vw;
+        bottom: 0;
+      }
+
       p {
-        font-family: 'Rubik Mono One', sans-serif;
+        width: 15.1041666667vw;
+        font-size: 1.30208333333vw;
+        line-height: 1.82291666667vw;
+        text-align: center;
+      }
+    }
+
+    .it-wont-be-cheaper {
+      //background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/stocks-it-want-be-cheaper.png");
+      h1 {
+        width: 29.9479166667vw;
+        height: 6.5625vw;
+        font-size: 3.125vw;
+        line-height: 3.4375vw;
+        margin-bottom: 1.041666666671vw;
         letter-spacing: -0.03em;
+      }
+
+      .stock-item__banner-description {
+        width: 28.5416666667vw;
+        padding-top: 1.45833333333vw;
+
+        p {
+          width: 25.5208333333vw;
+          font-size: 1.041666666671vw;
+        }
+      }
+    }
+
+    .lunch-menu {
+      //background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/images/stocks-lunch-menu.png");
+      h1 {
+        font-size: 3.125vw;
+        line-height: 3.4375vw;
+        letter-spacing: -0.015em;
+        width: 36.9791666667vw;
+        height: 6.5625vw;
+        margin-bottom: 1.04166666667vw;
+      }
+
+      .stock-item__banner-description {
+        padding-top: 1.45833333333vw;
+        width: 28.5416666667vw;
+
+        p {
+          font-size: 1.04166666667vw;
+        }
+      }
+
+    }
+
+    .stocks-item__banner-text {
+      padding: 3.22916666667vw 0 0 2.656252vw;
+    }
+  }
+
+  .stocks-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 17.2916666667vw;
+    margin-bottom: 2.08333333333vw;
+
+    .stocks-item__banner {
+      display: flex;
+      flex-direction: column;
+      width: 52.4479166667vw;
+      height: 17.2916666667vw;
+      border-radius: 10px;
+      background-size: cover;
+
+      h1 {
+        font-family: 'Rubik Mono One', sans-serif;
+        font-size: 3.125vw;
         color: #ffffff;
+        font-weight: 400;
+        line-height: 3.4375vw;
+        letter-spacing: -0.015em;
+      }
+
+      .stock-item__banner-description {
+        border-top: 3px solid #FFFFFF;
+
+        p {
+          font-family: 'Rubik Mono One', sans-serif;
+          letter-spacing: -0.03em;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .stocks-item__text-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 24.3229166667vw;
+      height: 17.2916666667vw;
+
+      h4 {
+        width: 24.3229166667vw;
+        font-weight: 400;
+        font-size: 1.45833333333vw;
+        line-height: 2.13541666667vw;
+        color: #19191B;
+        margin-bottom: 1.30208333333vw;
+      }
+
+      p {
+        font-size: 0.833333333333vw;
+        line-height: 1.35416666667vw;
+        color: #515151;
+      }
+
+      a {
+        font-size: 0.833333333333vw;
+        line-height: 0.989583333333vw;
+        color: #079D28;
+        text-decoration: none;
+        border-bottom: 1px solid #079D28;
+        width: 6.04166666667vw;
+        margin-bottom: 0.520833333333vw;
+      }
+
+    }
+  }
+
+
+  .novelty {
+    background: #079d28;
+  }
+
+  .hit {
+    background: #f2421b;
+  }
+
+  .stock {
+    background: #f9c81a;
+  }
+
+
+  .food-block {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .food-block__card {
+    padding-top: 0.729166666667vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24.0131578947%;
+    background: #ffffff;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+
+    .food-label {
+      position: absolute;
+      left: 1.04166666667vw;
+      display: flex;
+      align-items: center;
+      padding: 0 5.5%;
+      border-radius: 2.3125rem;
+      color: white;
+      height: 1.71875vw;
+      font-family: "Rubik", sans-serif;
+      font-weight: 400;
+      font-size: 0.875rem;
+      z-index: 10000;
+    }
+
+    .food-image-wrapper {
+      width: 16.6666666667vw;
+      height: 16.6666666667vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .food-image {
+        width: 87.6712328767%;
+
+        img {
+          max-width: 100%;
+        }
+
+        margin-bottom: 5.75342465753%;
+        position: relative;
+      }
+    }
+
+    .food-status {
+      display: flex;
+      align-items: center;
+      width: 83.5616438356%;
+      font-family: "Rubik", sans-serif;
+      font-weight: 400;
+      font-size: 0.875rem;
+      margin-bottom: 5px;
+
+      .food-status-dot {
+        width: 6px;
+        height: 6px;
+        margin-right: 6px;
+        border-radius: 50%;
+      }
+
+      .green {
+        background: #079d28;
+      }
+
+      .yellow {
+        background: #e99d0b;
+      }
+
+      .inStock {
+        color: #079d28;
+      }
+
+      .underTheOrder {
+        color: #e99d0b;
+      }
+    }
+
+    p {
+      font-family: "Rubik", sans-serif;
+      font-weight: 400;
+      font-weight: normal;
+      color: #515151;
+      margin-bottom: 10px;
+    }
+
+    .food-description {
+      width: 83.5616438356%;
+      height: 34.2465753425%;
+
+      p {
+        width: 97%;
+        line-height: 1.35416666667vw;
+        font-size: 0.833333333333vw;
+      }
+
+      h4 {
+        width: 100%;
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: 1.25vw;
+        line-height: 28px;
+        color: #19191b;
+        margin-bottom: 9px;
       }
     }
   }
-  .stocks-item__text-content {
+
+  .size-select {
     display: flex;
-    flex-direction: column;
+    position: relative;
     justify-content: space-between;
-    width: 24.3229166667vw;
-    height: 17.2916666667vw;
-    h4 {
-      width: 24.3229166667vw;
-      font-weight: 400;
-      font-size: 1.45833333333vw;
-      line-height: 2.13541666667vw;
-      color: #19191B;
-      margin-bottom: 1.30208333333vw;
-    }
-    p {
-      font-size: 0.833333333333vw;
-      line-height: 1.35416666667vw;
-      color: #515151;
-    }
-    a {
-      font-size: 0.833333333333vw;
-      line-height: 0.989583333333vw;
-      color: #079D28;
-      text-decoration: none;
-      border-bottom: 1px solid #079D28;
-      width: 6.04166666667vw;
-      margin-bottom: 0.520833333333vw;
-    }
-
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.novelty {
-  background: #079d28;
-}
-
-.hit {
-  background: #f2421b;
-}
-
-.stock {
-  background: #f9c81a;
-}
-
-
-.food-block {
-  width: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
-
-.food-block__card {
-  padding-top: 0.729166666667vw;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 24.0131578947%;
-  background: #ffffff;
-  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
-  .food-label {
-    position: absolute;
-    left: 1.04166666667vw;
-    display: flex;
-    align-items: center;
-    padding: 0 5.5%;
-    border-radius: 2.3125rem;
-    color: white;
-    height: 1.71875vw;
+    width: 83.5616438356%;
+    height: 2.5rem;
+    margin-bottom: 6.84931506849%;
+    background: #f3f3f7;
+    border-radius: 5px;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
-    font-size: 0.875rem;
-    z-index: 10000;
+    font-size: 14px;
+    line-height: 23px;
+    color: #19191b;
+
+    span {
+      padding-top: 5px;
+    }
   }
 
-  .food-image-wrapper {
-    width: 16.6666666667vw;
-    height: 16.6666666667vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .size-select__toggle {
+    position: absolute;
+    background: #ffffff;
+    width: 49.1803278689%;
+    height: 90%;
+    border-radius: 4px;
+    box-shadow: 5px 0px 15px #ececf3;
+    margin: 0.655737704918% 0 0.655737704918% 0.655737704918%;
+  }
 
-    .food-image {
-      width: 87.6712328767%;
+  .size-select__small {
+    width: 150px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .size-select__large {
+    width: 150px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .price-cart {
+    display: flex;
+    width: 83.5616438356%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 13.9726027397%;
+
+    .how-many {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border: 1px solid #dcdcdc;
+      width: 49.5081967213%;
+      height: 2.55208333333vw;
+      border-radius: 5px;
+
+      span {
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: 0.9375vw;
+        color: #515151;
+      }
+    }
+
+    .addToCart {
+      display: flex;
+      align-items: center;
+      border: 1px solid #079d28;
+      width: 49.5081967213%;
+      height: 2.55208333333vw;
+      font-family: "Rubik", sans-serif;
+      font-weight: 400;
+      font-size: 0.833333333333vw;
+      line-height: 19px;
+      color: #079d28;
+      border-radius: 5px;
+      user-select: none;
+      cursor: pointer;
 
       img {
-        max-width: 100%;
+        padding-left: 14%;
+        margin-right: 7.33333333333%;
       }
-
-      margin-bottom: 5.75342465753%;
-      position: relative;
-    }
-  }
-
-  .food-status {
-    display: flex;
-    align-items: center;
-    width: 83.5616438356%;
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-size: 0.875rem;
-    margin-bottom: 5px;
-
-    .food-status-dot {
-      width: 6px;
-      height: 6px;
-      margin-right: 6px;
-      border-radius: 50%;
     }
 
-    .green {
-      background: #079d28;
-    }
-
-    .yellow {
-      background: #e99d0b;
-    }
-
-    .inStock {
-      color: #079d28;
-    }
-
-    .underTheOrder {
-      color: #e99d0b;
-    }
-  }
-
-  p {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-weight: normal;
-    color: #515151;
-    margin-bottom: 10px;
-  }
-
-  .food-description {
-    width: 83.5616438356%;
-    height: 34.2465753425%;
-
-    p {
-      width: 97%;
-      line-height: 1.35416666667vw;
-      font-size: 0.833333333333vw;
-    }
-
-    h4 {
-      width: 100%;
+    .food-price {
       font-family: "Rubik", sans-serif;
       font-weight: 400;
       font-size: 1.25vw;
-      line-height: 28px;
-      color: #19191b;
-      margin-bottom: 9px;
+      line-height: 1.45833333333vw;
     }
   }
-}
 
-.size-select {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  width: 83.5616438356%;
-  height: 2.5rem;
-  margin-bottom: 6.84931506849%;
-  background: #f3f3f7;
-  border-radius: 5px;
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 23px;
-  color: #19191b;
 
-  span {
-    padding-top: 5px;
-  }
-}
-
-.size-select__toggle {
-  position: absolute;
-  background: #ffffff;
-  width: 49.1803278689%;
-  height: 90%;
-  border-radius: 4px;
-  box-shadow: 5px 0px 15px #ececf3;
-  margin: 0.655737704918% 0 0.655737704918% 0.655737704918%;
-}
-
-.size-select__small {
-  width: 150px;
-  height: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
-
-.size-select__large {
-  width: 150px;
-  height: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
-
-.price-cart {
-  display: flex;
-  width: 83.5616438356%;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 13.9726027397%;
-
-  .how-many {
+  .delivery-block {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border: 1px solid #dcdcdc;
-    width: 49.5081967213%;
-    height: 2.55208333333vw;
-    border-radius: 5px;
-    span {
+    justify-content: space-between;
+    width: 79.16%;
+    margin: 0 auto 5.20833333333vw auto;
+
+    h2 {
       font-family: "Rubik", sans-serif;
       font-weight: 400;
-      font-size: 0.9375vw;
+      font-size: 1.77083333333vw;
+      line-height: 2.08333333333vw;
+      color: #19191b;
+      margin-bottom: 2.08333333333vw;
+    }
+
+    p {
+      width: 33.75vw;
+      margin-bottom: 0.520833333333vw;
+      font-family: "Rubik", sans-serif;
+      font-weight: 400;
+      font-size: 0.833333333333vw;
+      line-height: 1.35416666667vw;
       color: #515151;
+
+      &:last-of-type {
+        padding-top: 0.520833333333vw;
+        margin-bottom: 1.71875vw;
+      }
     }
-  }
 
-  .addToCart {
-    display: flex;
-    align-items: center;
-    border: 1px solid #079d28;
-    width: 49.5081967213%;
-    height: 2.55208333333vw;
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-size: 0.833333333333vw;
-    line-height: 19px;
-    color: #079d28;
-    border-radius: 5px;
-    user-select: none;
-    cursor: pointer;
-
-    img {
-      padding-left: 14%;
-      margin-right: 7.33333333333%;
-    }
-  }
-
-  .food-price {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-size: 1.25vw;
-    line-height: 1.45833333333vw;
-  }
-}
-
-
-
-.delivery-block {
-  display: flex;
-  justify-content: space-between;
-  width: 79.16%;
-  margin: 0 auto 5.20833333333vw auto;
-
-  h2 {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-size: 1.77083333333vw;
-    line-height: 2.08333333333vw;
-    color: #19191b;
-    margin-bottom: 2.08333333333vw;
-  }
-
-  p {
-    width: 33.75vw;
-    margin-bottom: 0.520833333333vw;
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-size: 0.833333333333vw;
-    line-height: 1.35416666667vw;
-    color: #515151;
-
-    &:last-of-type {
-      padding-top: 0.520833333333vw;
-      margin-bottom: 1.71875vw;
-    }
-  }
-
-  a {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    text-decoration: none;
-    color: #079d28;
-    &:visited {
+    a {
+      font-family: "Rubik", sans-serif;
+      font-weight: 400;
       text-decoration: none;
-      font-size: 1rem;
-      line-height: 1.625rem;
+      color: #079d28;
+
+      &:visited {
+        text-decoration: none;
+        font-size: 1rem;
+        line-height: 1.625rem;
+      }
     }
   }
-}
 
-.delivery-block__map {
-  width: 49.3421052632%;
+  .delivery-block__map {
+    width: 49.3421052632%;
 
-  .map-image {
-    width: 100%;
+    .map-image {
+      width: 100%;
 
-    img {
-      max-width: 100%;
+      img {
+        max-width: 100%;
+      }
     }
   }
-}
 
 
   .button-basket {
@@ -2486,39 +2682,98 @@ body {
   }
 
 
-
-
 }
 
-.footer {
-  width: 79.16%;
+.footer1 {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin: auto;
-  &-wrapper {
+  height: 200px;
+  background: linear-gradient(to top, #212128, #000000), #211F20;
+  padding-top: 30px;
+
+  &-nav {
     display: flex;
-    align-items: center;
-    width: 100%;
-    height: 5.20833333333vw;
-    background: #f9f9f9;
-  }
+    list-style-type: none;
+    justify-content: space-between;
+    width: 425px;
+    margin-bottom: 30px;
 
-  .payment-methods {
-    width: 26.7105263158%;
 
-    img {
-      width: 100%;
+
+    &__item {
+      padding: 0 10px;
+      border-right: 2px solid  lighten(#a0a0a0, 10%) ;
+      &:last-child {
+       border-right: none;
+      }
+    }
+
+    &__item-link {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #a0a0a0;
+      font-size: 18px;
     }
   }
 
-  span {
+
+  &-content {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.0625rem;
     color: #a0a0a0;
+    display: flex;
+    justify-content: space-between;
+    width: 1500px;
+    height: 90px;
   }
+
+}
+
+.contacts {
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+
+  &-docs-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 530px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+
+    &__terms-of-use {
+      width: 270px;
+      color: #a0a0a0;
+      line-height: 20px;
+      text-decoration: none;
+      border-bottom: 1px solid  lighten(#a0a0a0, 10%);
+    }
+
+  }
+
+  &-phone-logo {
+    margin-right: 15px;
+  }
+
+  &-phones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75px;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      font-size: 17px;
+    }
+
+  }
+
 }
 
 
