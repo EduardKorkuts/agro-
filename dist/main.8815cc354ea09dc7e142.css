@@ -1,3 +1,6 @@
+/*!**********************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!./styles/styles.css ***!
+  \**********************************************************************/
 @charset "UTF-8";
 *, *:before, *:after {
   box-sizing: border-box;
@@ -112,19 +115,19 @@
   clip-path: circle(120vmax at 30vw 50%);
 }
 .slide:nth-child(1) .slide__inner {
-  background-image: url("../../src/assets/banner2.jpg");
+  background-image: url(f82d8c2bb316322f3be7.jpg);
 }
 .slide:nth-child(2) .slide__inner {
-  background-image: url("../../src/assets/banner3.jpg");
+  background-image: url(49c23148cf6e1c13426d.jpg);
 }
 .slide:nth-child(3) .slide__inner {
-  background-image: url("../../src/assets/banner4.jpg");
+  background-image: url(3ea9af577397accd2d22.jpg);
 }
 .slide:nth-child(4) .slide__inner {
-  background-image: url("../../src/assets/banner5.jpg");
+  background-image: url(526b7d0467cc8b304cb1.jpg);
 }
 .slide:nth-child(5) .slide__inner {
-  background-image: url("../../src/assets/banner6.jpg");
+  background-image: url(aa19cc0c5732ade31f01.jpg);
 }
 .slide__inner {
   position: absolute;
@@ -700,4 +703,3 @@ nav .drop-down li a {
   /* Larger touch target area */
 }
 
-/*# sourceMappingURL=styles.css.map */

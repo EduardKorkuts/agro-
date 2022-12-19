@@ -7,34 +7,74 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../src/styles/styles.css">
 </head>
 <body>
 
-  <header class="header">
+<header class="header">
 
-      <div class="logo">
-        <img src="../src/assets/logo1.png" alt="logo" width="150" height="61">
-      </div>
-      <nav class="nav nav_top">
-        <ul class="header__nav">
-          <li><a href="#" class="header__nav-item">Протравители</a></li>
-          <li><a href="#" class="header__nav-item">Гербициды</a></li>
-          <li><a href="#" class="header__nav-item">Фунгициды</a></li>
-          <li><a href="#" class="header__nav-item">Регуляторы роста</a></li>
-          <li><a href="#" class="header__nav-item">Инсектициды</a></li>
-          <li><a href="#" class="header__nav-item header__nav-item_desiccants">Десиканты</a></li>
-          <li><a href="#" class="header__nav-item">Новости</a></li>
-          <li><a href="#" class="header__nav-item">Контакты</a></li>
+  <div class="logo">
+    <img src="../src/assets/logo1.png" alt="logo" width="150" height="61">
+  </div>
+  <nav class="nav nav_top">
+    <ul class="header__nav">
+      <li class="header__nav-item">
+        <a href="#" >Средства защиты растений</a>
+        <ul class="drop-down closed">
+          <li><a href="../src/list.html" class="nav-button">Фунгициды</a></li>
+          <li><a href="../src/list.html">Пестициды</a></li>
+          <li><a href="../src/list.html">Гербициды</a></li>
+          <li><a href="../src/list.html">Десиканты</a></li>
+          <li><a href="../src/list.html">Инсектициды</a></li>
+          <li><a href="../src/list.html">Регуляторы роста</a></li>
         </ul>
-      </nav>
-      <div class="burger-wrapper">
-        <a href="#" class="burger-menu__button">
-          <span class="burger-menu__lines"></span>
-        </a>
-      </div>
-  </header>
+      </li>
+      <li class="header__nav-item">
+        <a href="#" >Микроудобрения</a>
+        <ul class="drop-down closed">
+          <li><a href="#" class="nav-button">Микроудобрения</a></li>
+          <li><a href="#">Микроудобрения</a></li>
+          <li><a href="#">Микроудобрения</a></li>
+          <li><a href="#">Микроудобрения</a></li>
+        </ul>
+      </li>
+      <li class="header__nav-item">
+        <a href="#" >Семена</a>
+        <ul class="drop-down closed">
+          <li><a href="#" class="nav-button">Семена</a></li>
+          <li><a href="#">Семена</a></li>
+          <li><a href="#">Семена</a></li>
+          <li><a href="#">Семена</a></li>
+        </ul>
+      </li>
+      <li class="header__nav-item">
+        <a href="#" >Новости</a>
+        <ul class="drop-down closed">
+          <li><a href="#" class="nav-button">Новости</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Новости</a></li>
+        </ul>
+      </li>
+      <li class="header__nav-item">
+        <a href="#" >Контакты</a>
+        <ul class="drop-down closed">
+          <li><a href="#" class="nav-button">Контакты</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="burger-wrapper">
+    <a href="#" class="burger-menu__button">
+      <span class="burger-menu__lines"></span>
+    </a>
+  </div>
+</header>
   <hr class="hr hr_top">
-
+  <div class="wrapper">
     <div class="drug-full-info">
       <div class="drug-name">
         <h2 class="drug-heading">
@@ -62,11 +102,11 @@
           <div class="drug-description-nav">
             <button class="drug-card-button">
 
-             Регламент применения
+              Регламент применения
             </button>
             <button class="drug-card-button">
 
-                Инструкция производителя
+              Инструкция производителя
             </button>
 
           </div>
@@ -132,13 +172,13 @@
         </ul>
 
         <p class="drug-instruction__recommendation">
-          <h3 class="drug-instruction__recommendation-heading">
-        Рекомендации:
-      </h3>
+        <h3 class="drug-instruction__recommendation-heading">
+          Рекомендации:
+        </h3>
         <p class="drug-instruction__recommendation-text">
           Применяйте Агроксон® по активно вегетирующим сорнякам в интервале температур от +10 °С до +25 °С. Максимальная эффективность достигается при обработке однолетних сорняков в стадии 2-3-х настоящих листьев, многолетних сорняков — в стадии розетки диаметром 5-8 см.
 
-           </p>
+        </p>
         <p class="drug-instruction__recommendation-text">
           Не рекомендуется применять на культурах, находящихся в состоянии стресса, вызванного заморозками, засухой, подтоплением или другими факторами. Не использовать жесткую воду (содержание солей > 400 мг/л) для приготовления рабочего раствора.
         </p>
@@ -147,65 +187,60 @@
 
     </div>
 
+  </div>
 
 
 
 
-      <footer class="footer">
+<footer class="footer">
+
+
+
+  <div class="footer-content">
+    <img src="../src/assets/logo1.png" alt="logo" width="150" height="61">
+    <div class="footer-content-docs">
+      <ul class="footer-nav">
+        <li class="footer-nav__item"><a href="" class="footer-nav__item-link">сзр</a></li>
+        <li class="footer-nav__item"><a href="" class="footer-nav__item-link">микроудобрения</a></li>
+        <li class="footer-nav__item"><a href="" class="footer-nav__item-link">семена</a></li>
+        <li class="footer-nav__item"><a href="" class="footer-nav__item-link">новости</a></li>
+      </ul>
+      <p>
+        © 2019-2021 ИП Кожемякин Денис Владимирович
+        Свидетельство о государственной регистрации № 12345678
+        от 28.06.2019г. выдано Администрацией Гомельского района г.Гомеля
+      </p>
+      <a href="#" class="footer-content-docs__terms-of-use">Пользовательское соглашение</a>
+    </div>
+    <div class="footer-content-phones">
+      <div class="footer-content-phones__item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512"
+             class="footer-content-phone-logo">
+          <title>ionicons-v5-g</title>
+          <path d="M451,374c-15.88-16-54.34-39.35-73-48.76C353.7,313,351.7,312,332.6,326.19c-12.74,9.47-21.21,17.93-36.12,14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48,5.41-23.23,14.79-36c13.22-18,12.22-21,.92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9,44,119.9,47,108.83,51.6A160.15,160.15,0,0,0,83,65.37C67,76,58.12,84.83,51.91,98.1s-9,44.38,23.07,102.64,54.57,88.05,101.14,134.49S258.5,406.64,310.85,436c64.76,36.27,89.6,29.2,102.91,23s22.18-15,32.83-31a159.09,159.09,0,0,0,13.8-25.8C465,391.17,468,391.17,451,374Z"
+                style="fill:none;stroke:#90B52D;stroke-miterlimit:10;stroke-width:32px"/>
+        </svg>
+        +375 (44) 123-123-123&emsp;Денис
+      </div>
+
+      <div class="footer-content-phones__item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512"
+             class="footer-content-phone-logo">
+          <title>ionicons-v5-g</title>
+          <path d="M451,374c-15.88-16-54.34-39.35-73-48.76C353.7,313,351.7,312,332.6,326.19c-12.74,9.47-21.21,17.93-36.12,14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48,5.41-23.23,14.79-36c13.22-18,12.22-21,.92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9,44,119.9,47,108.83,51.6A160.15,160.15,0,0,0,83,65.37C67,76,58.12,84.83,51.91,98.1s-9,44.38,23.07,102.64,54.57,88.05,101.14,134.49S258.5,406.64,310.85,436c64.76,36.27,89.6,29.2,102.91,23s22.18-15,32.83-31a159.09,159.09,0,0,0,13.8-25.8C465,391.17,468,391.17,451,374Z"
+                style="fill:none;stroke:#90B52D;stroke-miterlimit:10;stroke-width:32px"/>
+        </svg>
+        +375 (44) 123-123-123&emsp;Дмитрий
+      </div>
+    </div>
+
+  </div>
 
 
 
 
-        <div>
-          <ul class="footer-nav">
-            <li class="footer-nav__item"><a href="" class="footer-nav__item-link">сзр</a></li>
-            <li class="footer-nav__item"><a href="" class="footer-nav__item-link">микроудобрения</a></li>
-            <li class="footer-nav__item"><a href="" class="footer-nav__item-link">семена</a></li>
-            <li class="footer-nav__item"><a href="" class="footer-nav__item-link">новости</a></li>
-          </ul>
-        </div>
+</footer>
 
-
-
-
-
-        <div class="footer-content">
-          <img src="../src/assets/logo1.png" alt="logo" width="150" height="61">
-          <div class="contacts">
-
-            <div class="contacts-docs-info">
-              <p>
-                © 2019-2021 ИП Кожемякин Денис Владимирович
-                Свидетельство о государственной регистрации № 12345678
-                от 28.06.2019г. выдано Администрацией Гомельского района г.Гомеля
-              </p>
-              <a href="#" class="contacts-docs-info__terms-of-use">Пользовательское соглашение</a>
-            </div>
-            <div class="contacts-phones">
-              <div class="contacts-phones__item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512" class="contacts-phone-logo">
-                  <title>ionicons-v5-g</title>
-                  <path d="M451,374c-15.88-16-54.34-39.35-73-48.76C353.7,313,351.7,312,332.6,326.19c-12.74,9.47-21.21,17.93-36.12,14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48,5.41-23.23,14.79-36c13.22-18,12.22-21,.92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9,44,119.9,47,108.83,51.6A160.15,160.15,0,0,0,83,65.37C67,76,58.12,84.83,51.91,98.1s-9,44.38,23.07,102.64,54.57,88.05,101.14,134.49S258.5,406.64,310.85,436c64.76,36.27,89.6,29.2,102.91,23s22.18-15,32.83-31a159.09,159.09,0,0,0,13.8-25.8C465,391.17,468,391.17,451,374Z" style="fill:none;stroke:grey;stroke-miterlimit:10;stroke-width:32px"/>
-                </svg>
-                +375 (44) 123-123-123&emsp;Денис
-              </div>
-
-              <div class="contacts-phones__item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512" class="contacts-phone-logo">
-                  <title>ionicons-v5-g</title>
-                  <path d="M451,374c-15.88-16-54.34-39.35-73-48.76C353.7,313,351.7,312,332.6,326.19c-12.74,9.47-21.21,17.93-36.12,14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48,5.41-23.23,14.79-36c13.22-18,12.22-21,.92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9,44,119.9,47,108.83,51.6A160.15,160.15,0,0,0,83,65.37C67,76,58.12,84.83,51.91,98.1s-9,44.38,23.07,102.64,54.57,88.05,101.14,134.49S258.5,406.64,310.85,436c64.76,36.27,89.6,29.2,102.91,23s22.18-15,32.83-31a159.09,159.09,0,0,0,13.8-25.8C465,391.17,468,391.17,451,374Z" style="fill:none;stroke:grey;stroke-miterlimit:10;stroke-width:32px"/>
-                </svg>
-                +375 (44) 123-123-123&emsp;Дмитрий
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-      </footer>
-
-
-
+<script src="../src/index.js" defer></script>
 </body>
 </html>

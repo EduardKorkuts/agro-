@@ -1,5 +1,221 @@
 $mainGrey: #515151;
 $mainGreen: #90B52D;
+$mainBlue: #2F4464;
+$mainFont: "Rubik", sans-serif;
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+//-------Slider
+$numOfSlides: 5;
+$slidingAT: 1.3s;
+$controlSize: 60px;
+
+.slider {
+  width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  height: 80vh;
+  border-radius: 10px;
+
+  &__slides {
+    z-index: 1;
+    position: relative;
+    height: 100%;
+  }
+
+  &__control {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: $controlSize;
+    height: $controlSize;
+    margin-left: $controlSize/-2;
+    margin-top: $controlSize/-2;
+    border-radius: 50%;
+    background: whitesmoke;
+    transition: background-color 0.3s;
+    cursor: pointer;
+
+    &--right {
+      left: 95%;
+    }
+
+    &:hover {
+      background-color: $mainGreen;
+    }
+
+    &-line {
+      position: absolute;
+      left: 23px;
+      top: 50%;
+      width: 3px;
+      height: 14px;
+      transform-origin: 50% 0;
+      transform: rotate(-45deg);
+
+      &:nth-child(2) {
+        transform: translateY(1px) rotate(-135deg);
+      }
+
+      .slider__control--right & {
+        left: 37px;
+        transform-origin: 1px 0;
+        transform: rotate(45deg);
+
+        &:nth-child(2) {
+          transform: translateY(1px) rotate(135deg);
+        }
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: lighten($mainGrey, 20%);
+        transition: background-color 0.3s;
+      }
+
+      .slider__control:hover &:after {
+        background-color: whitesmoke;
+      }
+
+      .slider__control.a--rotation & {
+
+        &:after {
+          animation: arrowLineRotation 0.49s;
+        }
+
+        &:nth-child(1):after {
+          animation: arrowLineRotationRev 0.49s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes arrowLineRotation {
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes arrowLineRotationRev {
+  to {
+    transform: rotate(-180deg);
+  }
+}
+
+.slide {
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 150vmax;
+  height: 150vmax;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: clip-path 0s $slidingAT*0.7;
+  clip-path: circle($controlSize/2 at 120vw 50%);
+
+  &.s--prev {
+    clip-path: circle($controlSize/2 at 30vw 50%);
+  }
+
+  &.s--active {
+    z-index: 1;
+    transition: clip-path $slidingAT;
+    clip-path: circle(120vmax at 120vw 50%);
+
+    &.s--active-prev {
+      clip-path: circle(120vmax at 30vw 50%);
+    }
+  }
+
+  @for $i from 1 through $numOfSlides {
+    &:nth-child(#{$i}) {
+      .slide__inner {
+        //background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-#{$i+1}.jpg');
+        background-image: url('../../src/assets/banner#{$i+1}.jpg');
+      }
+    }
+  }
+
+  &__inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100vw;
+    height: 100vh;
+    margin-left: -50vw;
+    margin-top: -50vh;
+    background-size: cover;
+    background-position: center center;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.3);
+    }
+  }
+
+  &__content {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    margin-left: $controlSize/-2;
+    margin-top: $controlSize*0.8;
+    max-width: 480px;
+    color: whitesmoke;
+  }
+
+  &__heading {
+    margin-bottom: 20px;
+    font-size: 60px;
+  }
+
+  &__text {
+    font-size: 25px;
+
+    a {
+      color: inherit;
+    }
+  }
+}
+
+//----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 * {
   padding: 0;
@@ -11,7 +227,7 @@ $mainGreen: #90B52D;
 body {
   width: 100%;
   font-size: 16px;
-  overflow-x: hidden;
+
 
   //@media screen and (max-width: 375px) {
   //  body {
@@ -28,9 +244,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1500px;
-  padding: 50px 15px;
-  margin: 0 auto;
+  width: 1280px;
+  padding: 50px 0 80px 0;
+  margin: auto;
 }
 
 .header {
@@ -38,8 +254,10 @@ body {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  width: 1500px;
+  width: 1280px;
   height: 115px;
+  padding: 0 25px;
+
 
 
   &__nav {
@@ -53,12 +271,23 @@ body {
       font-family: "Rubik", sans-serif;
       font-weight: 400;
       font-size: 16px;
-      color: #515151;
+      color: $mainGrey;
+      transition: all 0.1s ease;
+      &:hover {
+        color: $mainBlue;
+      }
 
       &_desiccants {
         display: inline-block;
         width: 100px;
         border-right: 1px solid #dcdcdc;
+      }
+      a {
+        text-decoration: none;
+        color: $mainGrey;
+        &:hover {
+          color: $mainGreen;
+        }
       }
     }
 
@@ -106,90 +335,6 @@ body {
 }
 
 
-.slider-wrapper {
-  padding-top: 60px;
-  margin-bottom: 80px;
-  width: 100%;
-  display: flex;
-  transform: translateX(-71%);
-}
-
-.slider-block {
-
-  box-sizing: content-box;
-  flex-shrink: 0;
-  display: flex;
-  width: 80%;
-  position: relative;
-  margin-right: 1.04166666667vw;
-  border-radius: 15px;
-
-  &__image {
-    display: block;
-    max-width: 100%;
-    border-radius: 15px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
-  }
-
-  &__drug-logo {
-    display: block;
-    position: absolute;
-    top: 90px;
-    left: 70px;
-  }
-
-  &_first {
-    opacity: 0.5;
-  }
-
-  &_last {
-    opacity: 0.5;
-  }
-
-
-  .slider__block-info {
-    position: absolute;
-    top: 28.2%;
-    left: 6%;
-    display: flex;
-    flex-direction: column;
-    text-shadow: black 0 0 2px;
-
-    .label {
-      display: flex;
-      width: 7.08333333333vw;
-      height: 2.29166666667vw;
-      margin-bottom: 0.989583333333vw;
-      border-radius: 50px;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-family: "Rubik", sans-serif;
-      font-weight: 500;
-      font-size: 1.04166666667vw;
-    }
-
-    h1 {
-      width: 100%;
-      line-height: 4.32291666667vw;
-      font-size: 3.64583333333vw;
-      color: #ffffff;
-      font-family: "Rubik", sans-serif;
-      font-weight: 500;
-      margin-bottom: 1.09375vw;
-    }
-
-    p {
-      width: 23.1770833333vw;
-      height: 3.4375vw;
-      font-family: "Rubik";
-      font-weight: 400;
-      font-size: 1.04166666667vw;
-      line-height: 1.71875vw;
-      color: #ffffff;
-    }
-  }
-}
 
 
 form {
@@ -224,10 +369,9 @@ form {
 
 
 .drug-category-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 1600px;
-  margin: 0 auto 50px auto;
+  width: 1200px;
+  padding-top: 50px;
+
 
   h3 {
     font-family: "Rubik", sans-serif;
@@ -240,7 +384,10 @@ form {
 .drug-category {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  height: 960px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
 }
 
 .drug-card {
@@ -248,12 +395,11 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 300px;
+  width: 280px;
   height: 460px;
   padding: 20px 0;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 5px;
-  margin-right: 15px;
 
   &__info {
     display: flex;
@@ -269,7 +415,7 @@ form {
   &__title {
     font-weight: 500;
     font-size: 18px;
-    color: #19191b;
+    color: $mainGrey;
     margin-bottom: 10px;
   }
 
@@ -292,12 +438,15 @@ form {
     font-size: 16px;
     cursor: pointer;
 
+
     &:hover {
       background: $mainGreen;
       color: whitesmoke;
 
       svg {
         stroke: whitesmoke;
+        transform: scale(1.3);
+        transition: all 0.3s ease;
       }
     }
 
@@ -311,8 +460,8 @@ form {
 
 .load-more {
   display: flex;
-  align-self: center;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
   width: 202px;
   height: 49px;
@@ -336,6 +485,8 @@ form {
 
     svg {
       fill: whitesmoke;
+      transform: rotate(180deg);
+      transition: all 0.4s ease;
     }
   }
 }
@@ -446,7 +597,7 @@ form {
 
 
 .drug-full-info {
-  width: 1500px;
+  width: 1200px;
   margin: 0 auto;
   padding-top: 40px;
   color: #515151;
@@ -516,8 +667,12 @@ form {
 .drug-alphabetically-category {
   align-self: baseline;
   display: flex;
-  padding: 25px 15px;
-
+  padding: 15px 0;
+  border-top: 1px solid lighten($mainGreen, 35%);
+  &-wrapper {
+    width: 1100px;
+    padding: 30px 0 30px 0;
+  }
 
   &__icon {
     display: flex;
@@ -535,16 +690,19 @@ form {
     display: flex;
     width: 500px;
     flex-wrap: wrap;
-    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
 
 
   }
 }
 
 .drug-alphabetically {
+  width: 160px;
   display: flex;
   align-items: center;
-  padding: 5px 5px;
+  padding: 5px;
 
   &__canister-pic {
     display: flex;
@@ -573,18 +731,14 @@ form {
 .footer {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 200px;
   background: #4A4F5A;
-  padding: 30px;
 
   &-nav {
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
-    margin-bottom: 30px;
-
     &__item {
       padding: 0 10px;
       border-right: 2px solid lighten(#a0a0a0, 10%);
@@ -599,6 +753,9 @@ form {
       text-decoration: none;
       color: whitesmoke;
       font-size: 18px;
+      &:hover {
+        color: darken(whitesmoke, 8%);
+      }
     }
   }
 
@@ -607,56 +764,56 @@ form {
     font-weight: 400;
     color: white;
     display: flex;
-    justify-content: space-between;
-    width: 1500px;
-    height: 90px;
-  }
-}
-
-.contacts {
-  display: flex;
-  width: 1000px;
-  justify-content: space-between;
-
-  &-docs-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    width: 530px;
-    text-align: center;
-    font-size: 12px;
-    line-height: 20px;
-
-    &__terms-of-use {
-      width: 270px;
-      color: whitesmoke;
-      line-height: 20px;
-      text-decoration: none;
-      border-bottom: 1px solid whitesmoke;
-    }
-
-  }
-
-  &-phone-logo {
-    margin-right: 15px;
-  }
-
-  &-phones {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    height: 75px;
-
-    &__item {
+    width: 1200px;
+    &-docs {
       display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       align-items: center;
-      font-size: 17px;
+      width: 530px;
+      height: 130px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 20px;
+
+      &__terms-of-use {
+        width: 270px;
+        color: whitesmoke;
+        line-height: 20px;
+        text-decoration: none;
+        border-bottom: 1px solid whitesmoke;
+      }
+
     }
+
+    &-phone-logo {
+      margin-right: 15px;
+    }
+
+    &-phones {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 75px;
+
+      &__item {
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+      }
+    }
+
   }
 }
+
+
 
 .controls {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
   &-button {
     padding: 5px 10px;
     background: #ffffff;
@@ -681,5 +838,43 @@ form {
 
 
 
+
+
+
+nav .drop-down {
+  position: absolute;
+  z-index: 1000;
+  list-style: none;
+  overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
+  //height: 172px; /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
+  background-color: white;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.1) 0px 30px 60px -30px;
+  border-radius: 5px;
+  font-family: $mainFont;
+  width: 200px;
+  padding: 10px 0;
+  //text-align: center;
+  -webkit-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+}
+
+nav .drop-down.closed {
+  visibility: hidden;
+  /*  When toggled via jQuery this class will reduce the height of the ul which inconjuction
+      with overflow: hidden set on the ul will hide all list items apart from the first */
+  /* current li height 38px + 5px border */
+  height: 43px;
+}
+
+//nav .drop-down li {
+//  border-bottom: 1px solid $mainGrey;
+//}
+
+nav .drop-down li a {
+  display: block;
+  color: $mainGrey;
+  text-decoration: none;
+  padding: 15px; /* Larger touch target area */
+}
 
 
