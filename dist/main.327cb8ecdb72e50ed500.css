@@ -1,0 +1,728 @@
+/*!**********************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!./styles/styles.css ***!
+  \**********************************************************************/
+@charset "UTF-8";
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  height: 80vh;
+  border-radius: 10px;
+}
+.slider__slides {
+  z-index: 1;
+  position: relative;
+  height: 100%;
+}
+.slider__control {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  margin-top: -30px;
+  border-radius: 50%;
+  background: whitesmoke;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.slider__control--right {
+  left: 95%;
+}
+.slider__control:hover {
+  background-color: #90B52D;
+}
+.slider__control-line {
+  position: absolute;
+  left: 23px;
+  top: 50%;
+  width: 3px;
+  height: 14px;
+  transform-origin: 50% 0;
+  transform: rotate(-45deg);
+}
+.slider__control-line:nth-child(2) {
+  transform: translateY(1px) rotate(-135deg);
+}
+.slider__control--right .slider__control-line {
+  left: 37px;
+  transform-origin: 1px 0;
+  transform: rotate(45deg);
+}
+.slider__control--right .slider__control-line:nth-child(2) {
+  transform: translateY(1px) rotate(135deg);
+}
+.slider__control-line:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #848484;
+  transition: background-color 0.3s;
+}
+.slider__control:hover .slider__control-line:after {
+  background-color: whitesmoke;
+}
+.slider__control.a--rotation .slider__control-line:after {
+  animation: arrowLineRotation 0.49s;
+}
+.slider__control.a--rotation .slider__control-line:nth-child(1):after {
+  animation: arrowLineRotationRev 0.49s;
+}
+
+@keyframes arrowLineRotation {
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes arrowLineRotationRev {
+  to {
+    transform: rotate(-180deg);
+  }
+}
+.slide {
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 150vmax;
+  height: 150vmax;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: clip-path 0s 0.91s;
+  clip-path: circle(30px at 120vw 50%);
+}
+.slide.s--prev {
+  clip-path: circle(30px at 30vw 50%);
+}
+.slide.s--active {
+  z-index: 1;
+  transition: clip-path 1.3s;
+  clip-path: circle(120vmax at 120vw 50%);
+}
+.slide.s--active.s--active-prev {
+  clip-path: circle(120vmax at 30vw 50%);
+}
+.slide:nth-child(1) .slide__inner {
+  background-image: url(f82d8c2bb316322f3be7.jpg);
+}
+.slide:nth-child(2) .slide__inner {
+  background-image: url(49c23148cf6e1c13426d.jpg);
+}
+.slide:nth-child(3) .slide__inner {
+  background-image: url(3ea9af577397accd2d22.jpg);
+}
+.slide:nth-child(4) .slide__inner {
+  background-image: url(526b7d0467cc8b304cb1.jpg);
+}
+.slide:nth-child(5) .slide__inner {
+  background-image: url(aa19cc0c5732ade31f01.jpg);
+}
+.slide__inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100vw;
+  height: 100vh;
+  margin-left: -50vw;
+  margin-top: -50vh;
+  background-size: cover;
+  background-position: center center;
+}
+.slide__inner:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.slide__content {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  margin-left: -30px;
+  margin-top: 48px;
+  max-width: 480px;
+  color: whitesmoke;
+}
+.slide__heading {
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+.slide__text {
+  font-size: 25px;
+}
+.slide__text a {
+  color: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1280px;
+  min-height: 800px;
+  padding: 50px 0 80px 0;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 1280px;
+  height: 115px;
+  padding: 0 25px;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  list-style: none;
+}
+.header__nav-item {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #515151;
+  transition: all 0.1s ease;
+}
+.header__nav-item:hover {
+  color: #2F4464;
+}
+.header__nav-item_desiccants {
+  display: inline-block;
+  width: 100px;
+  border-right: 1px solid #dcdcdc;
+}
+.header__nav-item a {
+  text-decoration: none;
+  color: #515151;
+}
+.header__nav-item a:hover {
+  color: #90B52D;
+}
+
+.nav_top {
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  width: 79.16%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hr {
+  border: none;
+  /* Убираем границу для браузера Firefox */
+  color: #e8e8e8;
+  /* Цвет линии для остальных браузеров */
+  background-color: #e8e8e8;
+  /* Цвет линии для браузера Firefox и Opera */
+  height: 1px;
+  /* Толщина линии */
+}
+
+form {
+  display: flex;
+  margin-bottom: 2.0833333333vw;
+}
+form input[type=search]::-webkit-search-decoration,
+form input[type=search]::-webkit-search-cancel-button,
+form input[type=search]::-webkit-search-results-button,
+form input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 2.75rem;
+  background: #ffffff;
+  outline: none;
+  border: 1px solid #079D28;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #079D28;
+}
+form button img {
+  margin-right: 0.479375rem;
+}
+
+.drug-category-wrapper {
+  width: 1200px;
+  padding-top: 50px;
+}
+.drug-category-wrapper h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  margin-bottom: 2.0833333333vw;
+}
+
+.drug-category {
+  display: flex;
+  flex-wrap: wrap;
+  height: 960px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.drug-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 280px;
+  height: 460px;
+  padding: 20px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 5px;
+}
+.drug-card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.drug-card__image {
+  width: 220px;
+  height: 268px;
+}
+.drug-card__title {
+  font-weight: 500;
+  font-size: 18px;
+  color: #515151;
+  margin-bottom: 10px;
+}
+.drug-card__short-description {
+  text-align: center;
+}
+.drug-card-button {
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 150px;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #90B52D;
+  border-radius: 5px;
+  outline: none;
+  user-select: none;
+  background: #FFFFFF;
+  color: #90B52D;
+  font-size: 16px;
+  cursor: pointer;
+}
+.drug-card-button:hover {
+  background: #90B52D;
+  color: whitesmoke;
+}
+.drug-card-button:hover svg {
+  stroke: whitesmoke;
+  transform: scale(1.3);
+  transition: all 0.3s ease;
+}
+.drug-card-button svg {
+  stroke: #90B52D;
+}
+.drug-card-button_regulation:active {
+  top: 1px;
+}
+.drug-card-button_instruction:active {
+  top: 1px;
+}
+
+.load-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 202px;
+  height: 49px;
+  border: 1px solid #90B52D;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #fff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.96px;
+  color: #90B52D;
+}
+.load-more svg {
+  fill: #90B52D;
+  margin-right: 10px;
+}
+.load-more:hover {
+  background: #90B52D;
+  color: whitesmoke;
+}
+.load-more:hover svg {
+  fill: whitesmoke;
+  transform: rotate(180deg);
+  transition: all 0.4s ease;
+}
+
+.bottom-nav {
+  display: flex;
+  align-items: center;
+  width: 79.16%;
+  height: 5.2083333333vw;
+  margin: auto;
+}
+.bottom-nav ul {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-nav ul li a {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #515151;
+  text-decoration: none;
+}
+.bottom-nav ul li a:visited {
+  text-decoration: none;
+}
+
+.drug-table {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  position: absolute;
+}
+.drug-table th {
+  background: #90B52D;
+  height: 60px;
+  width: 25%;
+  font-weight: lighter;
+  text-shadow: 0 1px 0 gray;
+  color: white;
+  border: 1px solid #90B52D;
+  box-shadow: inset 0px 1px 2px #90B52D;
+  transition: all 0.2s;
+}
+.drug-table tr {
+  border-bottom: 1px solid #cccccc;
+}
+.drug-table tr:last-child {
+  border-bottom: 0px;
+}
+.drug-table td {
+  border-right: 1px solid #cccccc;
+  padding: 10px;
+  transition: all 0.2s;
+}
+.drug-table td:last-child {
+  border-right: 0px;
+}
+
+.drug-instruction {
+  font-family: "Rubik", sans-serif;
+  color: #515151;
+  position: absolute;
+}
+.drug-instruction-benefits {
+  list-style-type: none;
+  padding: 20px 0;
+}
+.drug-instruction-benefits__item {
+  display: flex;
+  align-items: center;
+}
+.drug-instruction-benefits-text {
+  padding-left: 10px;
+  line-height: 30px;
+}
+.drug-instruction__recommendation-heading {
+  padding: 15px 0;
+  font-weight: 400;
+  font-size: 20px;
+  color: #90B52D;
+}
+.drug-instruction__recommendation-text {
+  font-family: "Rubik", sans-serif;
+  color: #515151;
+  padding-bottom: 20px;
+}
+
+.drug-full-info {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+  color: #515151;
+}
+.drug-full-info .drug-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  margin-bottom: 40px;
+}
+.drug-full-info .drug-description {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+}
+.drug-full-info .drug-description .drug-short-description {
+  margin-bottom: 30px;
+}
+.drug-full-info .drug-description__controls {
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+}
+.drug-full-info .drug-heading {
+  font-family: "Rubik", sans-serif;
+  font-weight: lighter;
+  font-size: 35px;
+}
+.drug-full-info .drug-picture {
+  width: 200px;
+  height: 213px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, #d1d5db 0px 0px 0px 1px inset;
+}
+.drug-full-info .drug-text {
+  width: 900px;
+}
+.drug-full-info .drug-specification {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  height: 130px;
+  margin-bottom: 34px;
+}
+.drug-full-info .drug-specification__item {
+  display: flex;
+  align-items: center;
+}
+.drug-full-info .drug-specification__point {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  width: 240px;
+}
+
+.drug-docs {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  padding-top: 40px;
+}
+
+.drug-alphabetically-category {
+  align-self: baseline;
+  display: flex;
+  padding: 15px 0;
+  border-top: 1px solid #d9eaab;
+}
+.drug-alphabetically-category-wrapper {
+  width: 1100px;
+  padding: 30px 0 30px 0;
+}
+.drug-alphabetically-category__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #90B52D;
+  border-radius: 50%;
+  color: #515151;
+  user-select: none;
+}
+.drug-alphabetically-category__list {
+  display: flex;
+  width: 500px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.drug-alphabetically {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.drug-alphabetically__canister-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+.drug-alphabetically__name {
+  text-decoration: none;
+  font-size: 20px;
+  color: #6b6b6b;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+.drug-alphabetically__name:hover {
+  background: #90B52D;
+  color: whitesmoke;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: #4A4F5A;
+}
+.footer-nav {
+  display: flex;
+  list-style-type: none;
+}
+.footer-nav__item {
+  padding: 0 10px;
+  border-right: 2px solid #bababa;
+}
+.footer-nav__item:last-child {
+  border-right: none;
+}
+.footer-nav__item-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 18px;
+}
+.footer-nav__item-link:hover {
+  color: #e1e1e1;
+}
+.footer-content {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+}
+.footer-content-docs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 530px;
+  height: 130px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+}
+.footer-content-docs__terms-of-use {
+  width: 270px;
+  color: whitesmoke;
+  line-height: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid whitesmoke;
+}
+.footer-content-phone-logo {
+  margin-right: 15px;
+}
+.footer-content-phones {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 75px;
+}
+.footer-content-phones__item {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+}
+.controls-button {
+  padding: 5px 10px;
+  background: #ffffff;
+  border: 1px solid #90B52D;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+  color: #515151;
+}
+.controls-button:hover {
+  color: whitesmoke;
+  background: #90B52D;
+  transition: all 0.1s ease;
+}
+
+nav .drop-down {
+  position: absolute;
+  z-index: 1000;
+  list-style: none;
+  overflow: hidden;
+  /* When ul height is reduced, ensure overflowing li are not shown */
+  background-color: white;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.1) 0px 30px 60px -30px;
+  border-radius: 5px;
+  font-family: "Rubik", sans-serif;
+  width: 200px;
+  padding: 10px 0;
+  -webkit-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+}
+
+nav .drop-down.closed {
+  visibility: hidden;
+  /*  When toggled via jQuery this class will reduce the height of the ul which inconjuction
+      with overflow: hidden set on the ul will hide all list items apart from the first */
+  /* current li height 38px + 5px border */
+  height: 43px;
+}
+
+nav .drop-down li a {
+  display: block;
+  color: #515151;
+  text-decoration: none;
+  padding: 15px;
+  /* Larger touch target area */
+}
+
+.hidden {
+  display: none;
+}
+
