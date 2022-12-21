@@ -17,12 +17,12 @@ module.exports = {
   },
 
   devServer: {
-    port: 9999
+    port: 8888
   },
 
   plugins: [
     new HTMLWebpackPlugin({
-      template: './index.html'
+      template: './list.html'
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
