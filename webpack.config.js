@@ -22,6 +22,15 @@ module.exports = {
 
   plugins: [
     new HTMLWebpackPlugin({
+      filename: 'index.html',
+      template: './index.html'
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'drug.html',
+      template: './drug.html'
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'list.html',
       template: './list.html'
     }),
     new CleanWebpackPlugin(),

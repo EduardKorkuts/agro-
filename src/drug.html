@@ -12,7 +12,6 @@
   <link rel="mask-icon" href="../src/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -98,22 +97,22 @@
           <img src="../src/assets/arcade.jpg"  alt="arcade" width="200" height="213">
         </div>
         <div class="drug-text">
-          <ul class="drug-ul">
-            <li class="drug-ul__item"><span class="drug-ul__point">Действующее вещество: </span><span>800 г/лпросульфокарба80 г/л</span></li>
-            <li class="drug-ul__item"><span class="drug-ul__point">Химический класс:</span><span>тиокарбаматытриазины</span></li>
-            <li class="drug-ul__item"><span class="drug-ul__point">Класс опасности: </span><span>3 (вещества умеренно опасные)</span></li>
-            <li class="drug-ul__item"><span class="drug-ul__point">Препаративная форма: </span><span>КЭ (концентрат эмульсии)</span></li>
-            <li class="drug-ul__item"><span class="drug-ul__point">Срок хранения: </span><span>3 года со дня изготовления в невскрытой заводской упаковке</span></li>
+          <ul class="drug-specification">
+            <li class="drug-specification__item"><span class="drug-specification__point">Действующее вещество: </span><span>800 г/лпросульфокарба80 г/л</span></li>
+            <li class="drug-specification__item"><span class="drug-specification__point">Химический класс:</span><span>тиокарбаматытриазины</span></li>
+            <li class="drug-specification__item"><span class="drug-specification__point">Класс опасности: </span><span>3 (вещества умеренно опасные)</span></li>
+            <li class="drug-specification__item"><span class="drug-specification__point">Препаративная форма: </span><span>КЭ (концентрат эмульсии)</span></li>
+            <li class="drug-specification__item"><span class="drug-specification__point">Срок хранения: </span><span>3 года со дня изготовления в невскрытой заводской упаковке</span></li>
           </ul>
           <p class="drug-short-description">
             Комбинированный гербицид, предназначенный для наиболее эффективной защиты картофеля от однолетних злаковых и двудольных сорняков, в т.ч. подмаренника цепкого, проса куриного, видов ромашки, паслена черного, мари белой, горцев и других трудноискоренимых и вредоносных видов. Эффективен на всех типах почв, при разных сроках посадки и технологий возделывания культуры.
           </p>
-          <div class="drug-description-nav">
-            <button class="drug-card-button">
+          <div class="drug-description__controls">
 
+            <button class="drug-card-button drug-card-button_regulation" data-open="false" id="regulation">
               Регламент применения
             </button>
-            <button class="drug-card-button">
+            <button class="drug-card-button drug-card-button_instruction" data-open="false" id="instruction">
 
               Инструкция производителя
             </button>
@@ -121,7 +120,10 @@
           </div>
         </div>
       </div>
-      <table class="drug-table">
+    </div>
+    <div class="drug-docs">
+
+      <table class="drug-table hidden">
         <thead>
         <tr>
           <th class="drug-table-th">Норма расхода препарата, л/га, кг/га</th>
@@ -154,8 +156,7 @@
 
         </tbody>
       </table>
-
-      <div class="drug-instruction">
+      <div class="drug-instruction hidden">
         <p class="drug-instruction__recommendation-text">
           Селективный гербицид системного действия для уничтожения однолетних и некоторых многолетних двудольных сорняков в посевах многих культур
         </p>
@@ -193,7 +194,6 @@
         </p>
         </p>
       </div>
-
     </div>
 
   </div>
@@ -249,7 +249,7 @@
 
 
 </footer>
-
-<script src="../src/index.js" defer></script>
+<script src="../src/js/drug.js"></script>
+<script src="../src/js/dropdown.js"></script>
 </body>
 </html>
