@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <title>Плюс АгроХим</title>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../src/styles/styles.css">
-  <link rel="apple-touch-icon" sizes="120x120" href="../src/assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../src/assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../src/assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="../src/assets/favicon/site.webmanifest">
-  <link rel="mask-icon" href="../src/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
@@ -23,59 +23,52 @@
 
 <header class="header">
 
-  <a class="logo" href="../src/index.html">
-    <img src="../src/assets/logo1.png" alt="logo" width="150" height="61">
+  <a class="page-logo page-logo_active" href="index.html">
+    <img src="assets/logo1.png" alt="logo" width="150" height="61">
   </a>
   <nav class="nav nav_top">
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="#" >Средства защиты растений</a>
+        <a href="#" class="nav-link">Средства защиты растений</a>
         <ul class="drop-down closed">
-          <li><a href="#" class="nav-button">Фунгициды</a></li>
-          <li><a href="#">Пестициды</a></li>
-          <li><a href="#">Гербициды</a></li>
-          <li><a href="#">Десиканты</a></li>
-          <li><a href="#">Инсектициды</a></li>
-          <li><a href="#">Регуляторы роста</a></li>
+          <li><a href="list.html" class="nav-button nav-link">Фунгициды</a></li>
+          <li><a href="list.html" class="nav-link">Пестициды</a></li>
+          <li><a href="list.html" class="nav-link">Гербициды</a></li>
+          <li><a href="list.html" class="nav-link">Десиканты</a></li>
+          <li><a href="list.html" class="nav-link">Инсектициды</a></li>
+          <li><a href="list.html" class="nav-link">Регуляторы роста</a></li>
         </ul>
       </li>
       <li class="header__nav-item">
-        <a href="#" >Микроудобрения</a>
+        <a href="#" class="nav-link">Микроудобрения</a>
         <ul class="drop-down closed">
-          <li><a href="#" class="nav-button">Микроудобрения</a></li>
-          <li><a href="#">Микроудобрения</a></li>
-          <li><a href="#">Микроудобрения</a></li>
-          <li><a href="#">Микроудобрения</a></li>
+          <li><a href="#" class="nav-button nav-link">Микроудобрения</a></li>
+          <li><a href="#" class="nav-link">Микроудобрения</a></li>
+          <li><a href="#" class="nav-link">Микроудобрения</a></li>
+          <li><a href="#" class="nav-link">Микроудобрения</a></li>
         </ul>
       </li>
       <li class="header__nav-item">
-        <a href="#" >Семена</a>
+        <a href="#" class="nav-link">Семена</a>
         <ul class="drop-down closed">
-          <li><a href="#" class="nav-button">Семена</a></li>
-          <li><a href="#">Семена</a></li>
-          <li><a href="#">Семена</a></li>
-          <li><a href="#">Семена</a></li>
+          <li><a href="#" class="nav-button nav-link">Семена</a></li>
+          <li><a href="#" class="nav-link">Семена</a></li>
+          <li><a href="#" class="nav-link">Семена</a></li>
+          <li><a href="#" class="nav-link">Семена</a></li>
         </ul>
       </li>
       <li class="header__nav-item">
-        <a href="#" >Новости</a>
+        <a href="#" class="nav-link">Новости</a>
         <ul class="drop-down closed">
-          <li><a href="#" class="nav-button">Новости</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Новости</a></li>
+          <li><a href="#" class="nav-button nav-link">Новости</a></li>
+          <li><a href="#" class="nav-link">Новости</a></li>
+          <li><a href="#" class="nav-link">Новости</a></li>
+          <li><a href="#" class="nav-link">Новости</a></li>
         </ul>
       </li>
-      <li class="header__nav-item">
-        <a href="#" >Контакты</a>
-        <ul class="drop-down closed">
-          <li><a href="#" class="nav-button">Контакты</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </li>
+      <a href="contacts.html" class="nav-link">Контакты</a>
     </ul>
+
   </nav>
   <div class="burger-wrapper">
     <a href="#" class="burger-menu__button">
@@ -123,86 +116,86 @@
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
-          <a href="../src/drug.html" class="drug-alphabetically__name">Аркаде</a>
+          <a href="drug.html" class="drug-alphabetically__name">Аркаде</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
-          <a href="../src/drug.html" class="drug-alphabetically__name">Аркаде</a>
+          <a href="drug.html" class="drug-alphabetically__name">Аркаде</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
-          <a href="../src/drug.html" class="drug-alphabetically__name">Аркаде</a>
+          <a href="drug.html" class="drug-alphabetically__name">Аркаде</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
-          <a href="../src/drug.html" class="drug-alphabetically__name">Аркаде</a>
+          <a href="drug.html" class="drug-alphabetically__name">Аркаде</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
-          <a href="../src/drug.html" class="drug-alphabetically__name">Аркаде</a>
+          <a href="drug.html" class="drug-alphabetically__name">Аркаде</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
-          <a href="../src/drug.html" class="drug-alphabetically__name">Аркаде</a>
+          <a href="drug.html" class="drug-alphabetically__name">Аркаде</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
-          <a href="../src/drug.html" class="drug-alphabetically__name">Аркаде</a>
+          <a href="drug.html" class="drug-alphabetically__name">Аркаде</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
-          <a href="../src/drug.html" class="drug-alphabetically__name">Аркаде</a>
+          <a href="drug.html" class="drug-alphabetically__name">Аркаде</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
-          <a href="../src/drug.html" class="drug-alphabetically__name">Аркаде</a>
+          <a href="drug.html" class="drug-alphabetically__name">Аркаде</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
-          <a href="../src/drug.html" class="drug-alphabetically__name">Аркаде</a>
+          <a href="drug.html" class="drug-alphabetically__name">Аркаде</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
-          <a href="../src/drug.html" class="drug-alphabetically__name">Аркаде</a>
+          <a href="drug.html" class="drug-alphabetically__name">Аркаде</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
-          <a href="../src/drug.html" class="drug-alphabetically__name">Аркаде</a>
+          <a href="drug.html" class="drug-alphabetically__name">Аркаде</a>
         </div>
       </div>
     </div>
@@ -215,77 +208,77 @@
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
-          <a href="../src/drug.html" class="drug-alphabetically__name">Балерина</a>
+          <a href="drug.html" class="drug-alphabetically__name">Балерина</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
-          </div>
-          <a href="" class="drug-alphabetically__name">Балерина</a>
-        </div>
-        <div class="drug-alphabetically">
-
-          <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Балерина</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Балерина</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Балерина</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Балерина</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Балерина</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Балерина</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Балерина</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Балерина</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
+          </div>
+          <a href="" class="drug-alphabetically__name">Балерина</a>
+        </div>
+        <div class="drug-alphabetically">
+
+          <div class="drug-alphabetically__canister-pic">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Балерина</a>
         </div>
@@ -301,84 +294,84 @@
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
@@ -395,84 +388,84 @@
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Гербитокс</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Гербитокс</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Гербитокс</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Гербитокс</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Гербитокс</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Гербитокс</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Гербитокс</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Гербитокс</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Гербитокс</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Гербитокс</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Гербитокс</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Гербитокс</a>
         </div>
@@ -489,84 +482,84 @@
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Дублон</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Дублон</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Дублон</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Дублон</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Дублон</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Дублон</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Дублон</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Дублон</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Дублон</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Дублон</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Дублон</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Дублон</a>
         </div>
@@ -583,84 +576,84 @@
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Дублон</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
@@ -678,84 +671,84 @@
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
@@ -774,84 +767,84 @@
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
@@ -870,84 +863,84 @@
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
         <div class="drug-alphabetically">
 
           <div class="drug-alphabetically__canister-pic">
-            <img src="../src/assets/canister1.svg" alt="">
+            <img src="assets/canister1.svg" alt="">
           </div>
           <a href="" class="drug-alphabetically__name">Визион</a>
         </div>
@@ -972,25 +965,26 @@
 
 
 
+
 <footer class="footer">
 
 
 
   <div class="footer-content">
-    <img src="../src/assets/logo1.png" alt="logo" width="150" height="61">
+    <img src="assets/logo1.png" alt="logo" width="150" height="61">
     <div class="footer-content-docs">
       <ul class="footer-nav">
-        <li class="footer-nav__item"><a href="" class="footer-nav__item-link">сзр</a></li>
-        <li class="footer-nav__item"><a href="" class="footer-nav__item-link">микроудобрения</a></li>
-        <li class="footer-nav__item"><a href="" class="footer-nav__item-link">семена</a></li>
-        <li class="footer-nav__item"><a href="" class="footer-nav__item-link">новости</a></li>
+        <li class="footer-nav__item"><a href="" class="nav-link nav-link_footer">сзр</a></li>
+        <li class="footer-nav__item"><a href="" class="nav-link nav-link_footer">микроудобрения</a></li>
+        <li class="footer-nav__item"><a href="" class="nav-link nav-link_footer">семена</a></li>
+        <li class="footer-nav__item"><a href="" class="nav-link nav-link_footer">новости</a></li>
       </ul>
       <p>
         © 2019-2021 ИП Кожемякин Денис Владимирович
         Свидетельство о государственной регистрации № 12345678
         от 28.06.2019г. выдано Администрацией Гомельского района г.Гомеля
       </p>
-      <a href="#" class="footer-content-docs__terms-of-use">Пользовательское соглашение</a>
+      <a href="#" class="nav-link nav-link_term-of-use">Пользовательское соглашение</a>
     </div>
     <div class="footer-content-phones">
       <div class="footer-content-phones__item">
@@ -1020,8 +1014,6 @@
 
 
 </footer>
-
-<script src="../src/js/dropdown.js"></script>
 
 </body>
 </html>

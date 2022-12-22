@@ -3,6 +3,8 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -12,33 +14,51 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+    devServer: {
+      static: {
+        directory: path.join(__dirname, 'dist'),
+      },
+      compress: true,
+      port: 9000,
+    },
+
   resolve: {
     extensions: ['.js', '.png']
   },
 
-  devServer: {
-    port: 8888
-  },
 
   plugins: [
     new HTMLWebpackPlugin({
-      filename: 'index.html',
+      filename: './index.html',
       template: './index.html'
     }),
     new HTMLWebpackPlugin({
-      filename: 'drug.html',
+      filename: './drug.html',
       template: './drug.html'
     }),
     new HTMLWebpackPlugin({
-      filename: 'list.html',
+      filename: './list.html',
       template: './list.html'
+    }),
+    new HTMLWebpackPlugin({
+      filename: './contacts.html',
+      template: './contacts.html'
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
-    })
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: path.resolve(__dirname, 'src/assets'),
+          to: path.resolve(__dirname, 'dist/assets'),
+        },
 
+      ],
+    }),
+    new FaviconsWebpackPlugin(path.resolve(__dirname, 'src/assets/favicon/favicon.ico'))
   ],
+
   module: {
     rules: [
       {
@@ -58,7 +78,7 @@ module.exports = {
         use: [
           'file-loader'
         ],
-          include: path.join(__dirname, 'assets')
+        include: path.join(__dirname, 'assets')
       }
     ]
   }
